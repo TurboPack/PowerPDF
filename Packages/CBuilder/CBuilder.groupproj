@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{A454DE6C-134E-407A-8E78-0442C14F339F}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="PowerPDFCR.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PowerPDFCD.cbproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="PowerPDFCR">
+        <MSBuild Projects="PowerPDFCR.cbproj"/>
+    </Target>
+    <Target Name="PowerPDFCR:Clean">
+        <MSBuild Projects="PowerPDFCR.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PowerPDFCR:Make">
+        <MSBuild Projects="PowerPDFCR.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="PowerPDFCD">
+        <MSBuild Projects="PowerPDFCD.cbproj"/>
+    </Target>
+    <Target Name="PowerPDFCD:Clean">
+        <MSBuild Projects="PowerPDFCD.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PowerPDFCD:Make">
+        <MSBuild Projects="PowerPDFCD.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="PowerPDFCR;PowerPDFCD"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="PowerPDFCR:Clean;PowerPDFCD:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="PowerPDFCR:Make;PowerPDFCD:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

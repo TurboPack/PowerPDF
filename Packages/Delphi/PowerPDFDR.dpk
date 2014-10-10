@@ -1,0 +1,48 @@
+package PowerPDFDR;
+
+{$R *.res}
+{$R '..\..\PowerPdf.dcr'}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS OFF}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS OFF}
+{$LOCALSYMBOLS OFF}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'PowerPDF Runtime package'}
+{$RUNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vcl,
+  vclimg;
+
+contains
+  PdfJpegImage in '..\..\PdfJpegImage.pas',
+  PdfTypes in '..\..\PdfTypes.pas',
+  PRAnnotation in '..\..\PRAnnotation.pas',
+  PReport in '..\..\PReport.pas',
+  PRJpegImage in '..\..\PRJpegImage.pas',
+  PdfDoc in '..\..\PdfDoc.pas',
+  PdfFonts in '..\..\PdfFonts.pas',
+  PdfImages in '..\..\PdfImages.pas';
+
+end.
