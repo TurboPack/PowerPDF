@@ -61,7 +61,7 @@
         <ProjectType>CppPackage</ProjectType>
         <SanitizedProjectName>PowerPDFCR</SanitizedProjectName>
         <ILINK_GenerateImportLibrary>true</ILINK_GenerateImportLibrary>
-        <ILINK_Description>PowerPDF Runtime Package</ILINK_Description>
+        <ILINK_Description>TurboPack PowerPDF Runtime Package</ILINK_Description>
         <RuntimeOnlyPackage>true</RuntimeOnlyPackage>
         <_TCHARMapping>char</_TCHARMapping>
         <VerInfo_Locale>1031</VerInfo_Locale>

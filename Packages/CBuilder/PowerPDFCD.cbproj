@@ -67,7 +67,7 @@
         <DCC_OutputNeverBuildDcps>true</DCC_OutputNeverBuildDcps>
         <VerInfo_Locale>1031</VerInfo_Locale>
         <Multithreaded>true</Multithreaded>
-        <ILINK_Description>PowerPDF Designtime Package</ILINK_Description>
+        <ILINK_Description>TurboPack PowerPDF Designtime Package</ILINK_Description>
         <ILINK_LibraryPath>..\..\;$(ILINK_LibraryPath)</ILINK_LibraryPath>
         <ILINK_GenerateImportLibrary>true</ILINK_GenerateImportLibrary>
         <DCC_HppOutput>..\..\hpp</DCC_HppOutput>
