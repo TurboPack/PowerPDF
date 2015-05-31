@@ -1,8 +1,8 @@
 ﻿// CodeGear C++Builder
-// Copyright (c) 1995, 2014 by Embarcadero Technologies, Inc.
+// Copyright (c) 1995, 2015 by Embarcadero Technologies, Inc.
 // All rights reserved
 
-// (DO NOT EDIT: machine generated header) 'PdfJpegImage.pas' rev: 28.00 (Windows)
+// (DO NOT EDIT: machine generated header) 'PdfJpegImage.pas' rev: 29.00 (Windows)
 
 #ifndef PdfjpegimageHPP
 #define PdfjpegimageHPP
@@ -12,22 +12,23 @@
 #pragma option -w-      // All warnings off
 #pragma option -Vx      // Zero-length empty class member 
 #pragma pack(push,8)
-#include <System.hpp>	// Pascal unit
-#include <SysInit.hpp>	// Pascal unit
-#include <System.SysUtils.hpp>	// Pascal unit
-#include <System.Classes.hpp>	// Pascal unit
-#include <Vcl.Graphics.hpp>	// Pascal unit
-#include <PdfTypes.hpp>	// Pascal unit
-#include <PdfDoc.hpp>	// Pascal unit
-#include <PdfImages.hpp>	// Pascal unit
-#include <Vcl.Imaging.jpeg.hpp>	// Pascal unit
+#include <System.hpp>
+#include <SysInit.hpp>
+#include <System.SysUtils.hpp>
+#include <System.Classes.hpp>
+#include <Vcl.Graphics.hpp>
+#include <PdfTypes.hpp>
+#include <PdfDoc.hpp>
+#include <PdfImages.hpp>
+#include <Vcl.Imaging.jpeg.hpp>
 
 //-- user supplied -----------------------------------------------------------
 
 namespace Pdfjpegimage
 {
-//-- type declarations -------------------------------------------------------
+//-- forward type declarations -----------------------------------------------
 class DELPHICLASS TPdfJpegImage;
+//-- type declarations -------------------------------------------------------
 #pragma pack(push,4)
 class PASCALIMPLEMENTATION TPdfJpegImage : public Pdfimages::TPdfImageCreator
 {

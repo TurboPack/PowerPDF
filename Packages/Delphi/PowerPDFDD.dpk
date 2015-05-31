@@ -26,7 +26,7 @@ package PowerPDFDD;
 {$IMAGEBASE $400000}
 {$DEFINE RELEASE}
 {$ENDIF IMPLICITBUILDING}
-{$DESCRIPTION 'TurboPack PowerPDF Designtime package'}
+{$DESCRIPTION 'PowerPDF Design-time package'}
 {$DESIGNONLY}
 {$IMPLICITBUILD OFF}
 

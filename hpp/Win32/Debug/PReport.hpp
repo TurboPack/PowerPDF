@@ -1,8 +1,8 @@
 ﻿// CodeGear C++Builder
-// Copyright (c) 1995, 2014 by Embarcadero Technologies, Inc.
+// Copyright (c) 1995, 2015 by Embarcadero Technologies, Inc.
 // All rights reserved
 
-// (DO NOT EDIT: machine generated header) 'PReport.pas' rev: 28.00 (Windows)
+// (DO NOT EDIT: machine generated header) 'PReport.pas' rev: 29.00 (Windows)
 
 #ifndef PreportHPP
 #define PreportHPP
@@ -12,32 +12,50 @@
 #pragma option -w-      // All warnings off
 #pragma option -Vx      // Zero-length empty class member 
 #pragma pack(push,8)
-#include <System.hpp>	// Pascal unit
-#include <SysInit.hpp>	// Pascal unit
-#include <Winapi.Windows.hpp>	// Pascal unit
-#include <Winapi.Messages.hpp>	// Pascal unit
-#include <System.SysUtils.hpp>	// Pascal unit
-#include <System.Classes.hpp>	// Pascal unit
-#include <Vcl.Graphics.hpp>	// Pascal unit
-#include <Vcl.Controls.hpp>	// Pascal unit
-#include <Vcl.Forms.hpp>	// Pascal unit
-#include <Vcl.Dialogs.hpp>	// Pascal unit
-#include <Vcl.ExtCtrls.hpp>	// Pascal unit
-#include <PdfDoc.hpp>	// Pascal unit
-#include <PdfFonts.hpp>	// Pascal unit
-#include <PdfTypes.hpp>	// Pascal unit
-#include <PdfImages.hpp>	// Pascal unit
-#include <System.Types.hpp>	// Pascal unit
-#include <System.UITypes.hpp>	// Pascal unit
+#include <System.hpp>
+#include <SysInit.hpp>
+#include <Winapi.Windows.hpp>
+#include <Winapi.Messages.hpp>
+#include <System.SysUtils.hpp>
+#include <System.Classes.hpp>
+#include <Vcl.Graphics.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.Forms.hpp>
+#include <Vcl.Dialogs.hpp>
+#include <Vcl.ExtCtrls.hpp>
+#include <PdfDoc.hpp>
+#include <PdfFonts.hpp>
+#include <PdfTypes.hpp>
+#include <PdfImages.hpp>
+#include <System.Types.hpp>
+#include <System.UITypes.hpp>
 
 //-- user supplied -----------------------------------------------------------
 
 namespace Preport
 {
+//-- forward type declarations -----------------------------------------------
+class DELPHICLASS TPReport;
+class DELPHICLASS TPRCanvas;
+class DELPHICLASS TPRPage;
+class DELPHICLASS TPRPanel;
+class DELPHICLASS TPRChildPanel;
+class DELPHICLASS TPRLayoutPanel;
+class DELPHICLASS TPRGridPanel;
+class DELPHICLASS TPRItem;
+class DELPHICLASS TPRCustomLabel;
+class DELPHICLASS TPRLabel;
+class DELPHICLASS TPRText;
+class DELPHICLASS TPRShape;
+class DELPHICLASS TPRRect;
+class DELPHICLASS TPREllipse;
+class DELPHICLASS TPRImage;
+class DELPHICLASS TPRDestination;
+class DELPHICLASS TPROutlineEntry;
+class DELPHICLASS TPROutlineRoot;
 //-- type declarations -------------------------------------------------------
 enum DECLSPEC_DENUM TPRFontName : unsigned char { fnFixedWidth, fnArial, fnTimesRoman };
 
-class DELPHICLASS TPRCanvas;
 typedef void __fastcall (__closure *TPRPrintPageEvent)(System::TObject* Sender, TPRCanvas* ACanvas);
 
 typedef void __fastcall (__closure *TPRPrintPanelEvent)(System::TObject* Sender, TPRCanvas* ACanvas, const System::Types::TRect &Rect);
@@ -60,10 +78,6 @@ typedef Pdfdoc::TPdfViewerPreference TPRViewerPreference;
 
 typedef Pdfdoc::TPdfViewerPreferences TPRViewerPreferences;
 
-class DELPHICLASS TPReport;
-class DELPHICLASS TPROutlineRoot;
-class DELPHICLASS TPRDestination;
-class DELPHICLASS TPRPage;
 class PASCALIMPLEMENTATION TPReport : public Pdfdoc::TAbstractPReport
 {
 	typedef Pdfdoc::TAbstractPReport inherited;
@@ -207,7 +221,6 @@ public:
 };
 
 
-class DELPHICLASS TPRPanel;
 class PASCALIMPLEMENTATION TPRPanel : public Vcl::Extctrls::TCustomPanel
 {
 	typedef Vcl::Extctrls::TCustomPanel inherited;
@@ -232,7 +245,6 @@ public:
 };
 
 
-class DELPHICLASS TPRChildPanel;
 class PASCALIMPLEMENTATION TPRChildPanel : public TPRPanel
 {
 	typedef TPRPanel inherited;
@@ -249,7 +261,6 @@ public:
 };
 
 
-class DELPHICLASS TPRLayoutPanel;
 class PASCALIMPLEMENTATION TPRLayoutPanel : public TPRPanel
 {
 	typedef TPRPanel inherited;
@@ -278,7 +289,6 @@ public:
 };
 
 
-class DELPHICLASS TPRGridPanel;
 class PASCALIMPLEMENTATION TPRGridPanel : public TPRPanel
 {
 	typedef TPRPanel inherited;
@@ -322,7 +332,6 @@ public:
 };
 
 
-class DELPHICLASS TPRItem;
 class PASCALIMPLEMENTATION TPRItem : public Vcl::Controls::TGraphicControl
 {
 	typedef Vcl::Controls::TGraphicControl inherited;
@@ -349,7 +358,6 @@ public:
 };
 
 
-class DELPHICLASS TPRCustomLabel;
 class PASCALIMPLEMENTATION TPRCustomLabel : public TPRItem
 {
 	typedef TPRItem inherited;
@@ -392,7 +400,6 @@ public:
 };
 
 
-class DELPHICLASS TPRLabel;
 class PASCALIMPLEMENTATION TPRLabel : public TPRCustomLabel
 {
 	typedef TPRCustomLabel inherited;
@@ -424,7 +431,6 @@ public:
 };
 
 
-class DELPHICLASS TPRText;
 class PASCALIMPLEMENTATION TPRText : public TPRCustomLabel
 {
 	typedef TPRCustomLabel inherited;
@@ -456,7 +462,6 @@ __published:
 };
 
 
-class DELPHICLASS TPRShape;
 class PASCALIMPLEMENTATION TPRShape : public TPRItem
 {
 	typedef TPRItem inherited;
@@ -488,7 +493,6 @@ public:
 };
 
 
-class DELPHICLASS TPRRect;
 class PASCALIMPLEMENTATION TPRRect : public TPRShape
 {
 	typedef TPRShape inherited;
@@ -505,7 +509,6 @@ public:
 };
 
 
-class DELPHICLASS TPREllipse;
 class PASCALIMPLEMENTATION TPREllipse : public TPRShape
 {
 	typedef TPRShape inherited;
@@ -522,7 +525,6 @@ public:
 };
 
 
-class DELPHICLASS TPRImage;
 class PASCALIMPLEMENTATION TPRImage : public TPRItem
 {
 	typedef TPRItem inherited;
@@ -581,7 +583,6 @@ public:
 
 #pragma pack(pop)
 
-class DELPHICLASS TPROutlineEntry;
 #pragma pack(push,4)
 class PASCALIMPLEMENTATION TPROutlineEntry : public System::TObject
 {

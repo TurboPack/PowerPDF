@@ -1,8 +1,8 @@
 ﻿// CodeGear C++Builder
-// Copyright (c) 1995, 2014 by Embarcadero Technologies, Inc.
+// Copyright (c) 1995, 2015 by Embarcadero Technologies, Inc.
 // All rights reserved
 
-// (DO NOT EDIT: machine generated header) 'PRAnnotation.pas' rev: 28.00 (Windows)
+// (DO NOT EDIT: machine generated header) 'PRAnnotation.pas' rev: 29.00 (Windows)
 
 #ifndef PrannotationHPP
 #define PrannotationHPP
@@ -12,27 +12,28 @@
 #pragma option -w-      // All warnings off
 #pragma option -Vx      // Zero-length empty class member 
 #pragma pack(push,8)
-#include <System.hpp>	// Pascal unit
-#include <SysInit.hpp>	// Pascal unit
-#include <Winapi.Windows.hpp>	// Pascal unit
-#include <Winapi.Messages.hpp>	// Pascal unit
-#include <System.SysUtils.hpp>	// Pascal unit
-#include <System.Classes.hpp>	// Pascal unit
-#include <Vcl.Graphics.hpp>	// Pascal unit
-#include <Vcl.Controls.hpp>	// Pascal unit
-#include <Vcl.Forms.hpp>	// Pascal unit
-#include <Vcl.Dialogs.hpp>	// Pascal unit
-#include <PReport.hpp>	// Pascal unit
-#include <PdfDoc.hpp>	// Pascal unit
-#include <PdfFonts.hpp>	// Pascal unit
-#include <PdfTypes.hpp>	// Pascal unit
+#include <System.hpp>
+#include <SysInit.hpp>
+#include <Winapi.Windows.hpp>
+#include <Winapi.Messages.hpp>
+#include <System.SysUtils.hpp>
+#include <System.Classes.hpp>
+#include <Vcl.Graphics.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.Forms.hpp>
+#include <Vcl.Dialogs.hpp>
+#include <PReport.hpp>
+#include <PdfDoc.hpp>
+#include <PdfFonts.hpp>
+#include <PdfTypes.hpp>
 
 //-- user supplied -----------------------------------------------------------
 
 namespace Prannotation
 {
-//-- type declarations -------------------------------------------------------
+//-- forward type declarations -----------------------------------------------
 class DELPHICLASS TPRAnnotation;
+//-- type declarations -------------------------------------------------------
 class PASCALIMPLEMENTATION TPRAnnotation : public Preport::TPRItem
 {
 	typedef Preport::TPRItem inherited;

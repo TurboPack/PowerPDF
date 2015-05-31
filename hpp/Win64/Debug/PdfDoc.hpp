@@ -1,8 +1,8 @@
 ﻿// CodeGear C++Builder
-// Copyright (c) 1995, 2014 by Embarcadero Technologies, Inc.
+// Copyright (c) 1995, 2015 by Embarcadero Technologies, Inc.
 // All rights reserved
 
-// (DO NOT EDIT: machine generated header) 'PdfDoc.pas' rev: 28.00 (Windows)
+// (DO NOT EDIT: machine generated header) 'PdfDoc.pas' rev: 29.00 (Windows)
 
 #ifndef PdfdocHPP
 #define PdfdocHPP
@@ -12,17 +12,35 @@
 #pragma option -w-      // All warnings off
 #pragma option -Vx      // Zero-length empty class member 
 #pragma pack(push,8)
-#include <System.hpp>	// Pascal unit
-#include <SysInit.hpp>	// Pascal unit
-#include <System.SysUtils.hpp>	// Pascal unit
-#include <System.Classes.hpp>	// Pascal unit
-#include <PdfTypes.hpp>	// Pascal unit
-#include <Winapi.Windows.hpp>	// Pascal unit
+#include <System.hpp>
+#include <SysInit.hpp>
+#include <System.SysUtils.hpp>
+#include <System.Classes.hpp>
+#include <PdfTypes.hpp>
+#include <Winapi.Windows.hpp>
 
 //-- user supplied -----------------------------------------------------------
 
 namespace Pdfdoc
 {
+//-- forward type declarations -----------------------------------------------
+struct TPDF_STR_TBL;
+struct TPDF_INT_TBL;
+class DELPHICLASS TPdfHeader;
+class DELPHICLASS TPdfTrailer;
+class DELPHICLASS TPdfXrefEntry;
+class DELPHICLASS TPdfXref;
+class DELPHICLASS TAbstractPReport;
+class DELPHICLASS TPdfDoc;
+class DELPHICLASS TPdfCanvasAttribute;
+class DELPHICLASS TPdfCanvas;
+class DELPHICLASS TPdfDictionaryWrapper;
+class DELPHICLASS TPdfInfo;
+class DELPHICLASS TPdfCatalog;
+class DELPHICLASS TPdfFont;
+class DELPHICLASS TPdfDestination;
+class DELPHICLASS TPdfOutlineEntry;
+class DELPHICLASS TPdfOutlineRoot;
 //-- type declarations -------------------------------------------------------
 typedef System::StaticArray<System::UnicodeString, 4> Pdfdoc__1;
 
@@ -72,8 +90,6 @@ public:
 };
 
 
-class DELPHICLASS TPdfHeader;
-#pragma pack(push,4)
 class PASCALIMPLEMENTATION TPdfHeader : public System::TObject
 {
 	typedef System::TObject inherited;
@@ -86,10 +102,7 @@ public:
 	
 };
 
-#pragma pack(pop)
 
-class DELPHICLASS TPdfTrailer;
-#pragma pack(push,4)
 class PASCALIMPLEMENTATION TPdfTrailer : public System::TObject
 {
 	typedef System::TObject inherited;
@@ -108,10 +121,7 @@ public:
 	__property Pdftypes::TPdfDictionary* Attributes = {read=FAttributes};
 };
 
-#pragma pack(pop)
 
-class DELPHICLASS TPdfXrefEntry;
-#pragma pack(push,4)
 class PASCALIMPLEMENTATION TPdfXrefEntry : public System::TObject
 {
 	typedef System::TObject inherited;
@@ -133,10 +143,7 @@ public:
 	__property Pdftypes::TPdfObject* Value = {read=FValue};
 };
 
-#pragma pack(pop)
 
-class DELPHICLASS TPdfXref;
-#pragma pack(push,4)
 class PASCALIMPLEMENTATION TPdfXref : public Pdftypes::TPdfObjectMgr
 {
 	typedef Pdftypes::TPdfObjectMgr inherited;
@@ -158,9 +165,7 @@ public:
 	__property int ItemCount = {read=GetItemCount, nodefault};
 };
 
-#pragma pack(pop)
 
-class DELPHICLASS TAbstractPReport;
 class PASCALIMPLEMENTATION TAbstractPReport : public System::Classes::TComponent
 {
 	typedef System::Classes::TComponent inherited;
@@ -172,14 +177,6 @@ public:
 };
 
 
-class DELPHICLASS TPdfDoc;
-class DELPHICLASS TPdfCatalog;
-class DELPHICLASS TPdfCanvas;
-class DELPHICLASS TPdfInfo;
-class DELPHICLASS TPdfOutlineRoot;
-class DELPHICLASS TPdfFont;
-class DELPHICLASS TPdfDestination;
-#pragma pack(push,4)
 class PASCALIMPLEMENTATION TPdfDoc : public System::TObject
 {
 	typedef System::TObject inherited;
@@ -238,10 +235,7 @@ public:
 	__property bool UseOutlines = {read=FUseOutlines, write=FUseOutlines, nodefault};
 };
 
-#pragma pack(pop)
 
-class DELPHICLASS TPdfCanvasAttribute;
-#pragma pack(push,4)
 class PASCALIMPLEMENTATION TPdfCanvasAttribute : public System::TObject
 {
 	typedef System::TObject inherited;
@@ -274,9 +268,7 @@ public:
 	
 };
 
-#pragma pack(pop)
 
-#pragma pack(push,4)
 class PASCALIMPLEMENTATION TPdfCanvas : public System::TObject
 {
 	typedef System::TObject inherited;
@@ -362,10 +354,7 @@ public:
 	__property int PageHeight = {read=GetPageHeight, write=SetPageHeight, nodefault};
 };
 
-#pragma pack(pop)
 
-class DELPHICLASS TPdfDictionaryWrapper;
-#pragma pack(push,4)
 class PASCALIMPLEMENTATION TPdfDictionaryWrapper : public System::Classes::TPersistent
 {
 	typedef System::Classes::TPersistent inherited;
@@ -388,9 +377,7 @@ public:
 	
 };
 
-#pragma pack(pop)
 
-#pragma pack(push,4)
 class PASCALIMPLEMENTATION TPdfInfo : public TPdfDictionaryWrapper
 {
 	typedef TPdfDictionaryWrapper inherited;
@@ -427,9 +414,7 @@ public:
 	
 };
 
-#pragma pack(pop)
 
-#pragma pack(push,4)
 class PASCALIMPLEMENTATION TPdfCatalog : public TPdfDictionaryWrapper
 {
 	typedef TPdfDictionaryWrapper inherited;
@@ -465,9 +450,7 @@ public:
 	
 };
 
-#pragma pack(pop)
 
-#pragma pack(push,4)
 class PASCALIMPLEMENTATION TPdfFont : public TPdfDictionaryWrapper
 {
 	typedef TPdfDictionaryWrapper inherited;
@@ -488,9 +471,7 @@ public:
 	
 };
 
-#pragma pack(pop)
 
-#pragma pack(push,4)
 class PASCALIMPLEMENTATION TPdfDestination : public System::TObject
 {
 	typedef System::TObject inherited;
@@ -524,10 +505,7 @@ public:
 	__property System::TObject* Reference = {read=FReference, write=FReference};
 };
 
-#pragma pack(pop)
 
-class DELPHICLASS TPdfOutlineEntry;
-#pragma pack(push,4)
 class PASCALIMPLEMENTATION TPdfOutlineEntry : public TPdfDictionaryWrapper
 {
 	typedef TPdfDictionaryWrapper inherited;
@@ -567,9 +545,7 @@ public:
 	
 };
 
-#pragma pack(pop)
 
-#pragma pack(push,4)
 class PASCALIMPLEMENTATION TPdfOutlineRoot : public TPdfOutlineEntry
 {
 	typedef TPdfOutlineEntry inherited;
@@ -590,7 +566,6 @@ public:
 	
 };
 
-#pragma pack(pop)
 
 //-- var, const, procedure ---------------------------------------------------
 #define POWER_PDF_VERSION_TEXT L"PowerPdf version 0.9"

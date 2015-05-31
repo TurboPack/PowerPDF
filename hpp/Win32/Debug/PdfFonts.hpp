@@ -1,8 +1,8 @@
 ﻿// CodeGear C++Builder
-// Copyright (c) 1995, 2014 by Embarcadero Technologies, Inc.
+// Copyright (c) 1995, 2015 by Embarcadero Technologies, Inc.
 // All rights reserved
 
-// (DO NOT EDIT: machine generated header) 'PdfFonts.pas' rev: 28.00 (Windows)
+// (DO NOT EDIT: machine generated header) 'PdfFonts.pas' rev: 29.00 (Windows)
 
 #ifndef PdffontsHPP
 #define PdffontsHPP
@@ -12,17 +12,32 @@
 #pragma option -w-      // All warnings off
 #pragma option -Vx      // Zero-length empty class member 
 #pragma pack(push,8)
-#include <System.hpp>	// Pascal unit
-#include <SysInit.hpp>	// Pascal unit
-#include <System.SysUtils.hpp>	// Pascal unit
-#include <System.Classes.hpp>	// Pascal unit
-#include <PdfDoc.hpp>	// Pascal unit
-#include <PdfTypes.hpp>	// Pascal unit
+#include <System.hpp>
+#include <SysInit.hpp>
+#include <System.SysUtils.hpp>
+#include <System.Classes.hpp>
+#include <PdfDoc.hpp>
+#include <PdfTypes.hpp>
 
 //-- user supplied -----------------------------------------------------------
 
 namespace Pdffonts
 {
+//-- forward type declarations -----------------------------------------------
+class DELPHICLASS TPdfType1Font;
+class DELPHICLASS TPdfFixedWidth;
+class DELPHICLASS TPdfFixedWidthBold;
+class DELPHICLASS TPdfFixedWidthItalic;
+class DELPHICLASS TPdfFixedWidthBoldItalic;
+class DELPHICLASS TPdfArial;
+class DELPHICLASS TPdfArialBold;
+class DELPHICLASS TPdfArialItalic;
+class DELPHICLASS TPdfArialBoldItalic;
+class DELPHICLASS TPdfTimesRoman;
+class DELPHICLASS TPdfTimesBold;
+class DELPHICLASS TPdfTimesItalic;
+class DELPHICLASS TPdfTimesBoldItalic;
+class DELPHICLASS TPdfScript;
 //-- type declarations -------------------------------------------------------
 typedef System::StaticArray<Pdfdoc::TPDF_STR_TBL, 3> Pdffonts__1;
 
@@ -70,7 +85,6 @@ typedef System::StaticArray<Pdfdoc::TPDF_STR_TBL, 3> Pdffonts__22;
 
 typedef System::StaticArray<Pdfdoc::TPDF_INT_TBL, 7> Pdffonts__32;
 
-class DELPHICLASS TPdfType1Font;
 #pragma pack(push,4)
 class PASCALIMPLEMENTATION TPdfType1Font : public Pdfdoc::TPdfFont
 {
@@ -94,7 +108,6 @@ public:
 
 #pragma pack(pop)
 
-class DELPHICLASS TPdfFixedWidth;
 #pragma pack(push,4)
 class PASCALIMPLEMENTATION TPdfFixedWidth : public TPdfType1Font
 {
@@ -109,7 +122,6 @@ public:
 
 #pragma pack(pop)
 
-class DELPHICLASS TPdfFixedWidthBold;
 #pragma pack(push,4)
 class PASCALIMPLEMENTATION TPdfFixedWidthBold : public TPdfType1Font
 {
@@ -124,7 +136,6 @@ public:
 
 #pragma pack(pop)
 
-class DELPHICLASS TPdfFixedWidthItalic;
 #pragma pack(push,4)
 class PASCALIMPLEMENTATION TPdfFixedWidthItalic : public TPdfType1Font
 {
@@ -139,7 +150,6 @@ public:
 
 #pragma pack(pop)
 
-class DELPHICLASS TPdfFixedWidthBoldItalic;
 #pragma pack(push,4)
 class PASCALIMPLEMENTATION TPdfFixedWidthBoldItalic : public TPdfType1Font
 {
@@ -154,7 +164,6 @@ public:
 
 #pragma pack(pop)
 
-class DELPHICLASS TPdfArial;
 #pragma pack(push,4)
 class PASCALIMPLEMENTATION TPdfArial : public TPdfType1Font
 {
@@ -169,7 +178,6 @@ public:
 
 #pragma pack(pop)
 
-class DELPHICLASS TPdfArialBold;
 #pragma pack(push,4)
 class PASCALIMPLEMENTATION TPdfArialBold : public TPdfType1Font
 {
@@ -184,7 +192,6 @@ public:
 
 #pragma pack(pop)
 
-class DELPHICLASS TPdfArialItalic;
 #pragma pack(push,4)
 class PASCALIMPLEMENTATION TPdfArialItalic : public TPdfType1Font
 {
@@ -199,7 +206,6 @@ public:
 
 #pragma pack(pop)
 
-class DELPHICLASS TPdfArialBoldItalic;
 #pragma pack(push,4)
 class PASCALIMPLEMENTATION TPdfArialBoldItalic : public TPdfType1Font
 {
@@ -214,7 +220,6 @@ public:
 
 #pragma pack(pop)
 
-class DELPHICLASS TPdfTimesRoman;
 #pragma pack(push,4)
 class PASCALIMPLEMENTATION TPdfTimesRoman : public TPdfType1Font
 {
@@ -229,7 +234,6 @@ public:
 
 #pragma pack(pop)
 
-class DELPHICLASS TPdfTimesBold;
 #pragma pack(push,4)
 class PASCALIMPLEMENTATION TPdfTimesBold : public TPdfType1Font
 {
@@ -244,7 +248,6 @@ public:
 
 #pragma pack(pop)
 
-class DELPHICLASS TPdfTimesItalic;
 #pragma pack(push,4)
 class PASCALIMPLEMENTATION TPdfTimesItalic : public TPdfType1Font
 {
@@ -259,7 +262,6 @@ public:
 
 #pragma pack(pop)
 
-class DELPHICLASS TPdfTimesBoldItalic;
 #pragma pack(push,4)
 class PASCALIMPLEMENTATION TPdfTimesBoldItalic : public TPdfType1Font
 {
@@ -274,7 +276,6 @@ public:
 
 #pragma pack(pop)
 
-class DELPHICLASS TPdfScript;
 #pragma pack(push,4)
 class PASCALIMPLEMENTATION TPdfScript : public TPdfType1Font
 {

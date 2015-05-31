@@ -1,8 +1,8 @@
 ﻿// CodeGear C++Builder
-// Copyright (c) 1995, 2014 by Embarcadero Technologies, Inc.
+// Copyright (c) 1995, 2015 by Embarcadero Technologies, Inc.
 // All rights reserved
 
-// (DO NOT EDIT: machine generated header) 'PdfImages.pas' rev: 28.00 (Windows)
+// (DO NOT EDIT: machine generated header) 'PdfImages.pas' rev: 29.00 (Windows)
 
 #ifndef PdfimagesHPP
 #define PdfimagesHPP
@@ -12,22 +12,24 @@
 #pragma option -w-      // All warnings off
 #pragma option -Vx      // Zero-length empty class member 
 #pragma pack(push,8)
-#include <System.hpp>	// Pascal unit
-#include <SysInit.hpp>	// Pascal unit
-#include <System.SysUtils.hpp>	// Pascal unit
-#include <Winapi.Windows.hpp>	// Pascal unit
-#include <Vcl.Graphics.hpp>	// Pascal unit
-#include <System.Classes.hpp>	// Pascal unit
-#include <PdfTypes.hpp>	// Pascal unit
-#include <PdfDoc.hpp>	// Pascal unit
+#include <System.hpp>
+#include <SysInit.hpp>
+#include <System.SysUtils.hpp>
+#include <Winapi.Windows.hpp>
+#include <Vcl.Graphics.hpp>
+#include <System.Classes.hpp>
+#include <PdfTypes.hpp>
+#include <PdfDoc.hpp>
 
 //-- user supplied -----------------------------------------------------------
 
 namespace Pdfimages
 {
-//-- type declarations -------------------------------------------------------
+//-- forward type declarations -----------------------------------------------
 class DELPHICLASS TPdfImageCreator;
-#pragma pack(push,4)
+class DELPHICLASS TPdfBitmapImage;
+class DELPHICLASS EPdfInvalidImageFormat;
+//-- type declarations -------------------------------------------------------
 class PASCALIMPLEMENTATION TPdfImageCreator : public System::Classes::TPersistent
 {
 	typedef System::Classes::TPersistent inherited;
@@ -42,10 +44,7 @@ public:
 	
 };
 
-#pragma pack(pop)
 
-class DELPHICLASS TPdfBitmapImage;
-#pragma pack(push,4)
 class PASCALIMPLEMENTATION TPdfBitmapImage : public TPdfImageCreator
 {
 	typedef TPdfImageCreator inherited;
@@ -63,10 +62,7 @@ public:
 	
 };
 
-#pragma pack(pop)
 
-class DELPHICLASS EPdfInvalidImageFormat;
-#pragma pack(push,4)
 class PASCALIMPLEMENTATION EPdfInvalidImageFormat : public System::Sysutils::Exception
 {
 	typedef System::Sysutils::Exception inherited;
@@ -88,7 +84,6 @@ public:
 	
 };
 
-#pragma pack(pop)
 
 //-- var, const, procedure ---------------------------------------------------
 extern DELPHI_PACKAGE Pdftypes::TPdfImage* __fastcall CreatePdfImage(Vcl::Graphics::TGraphic* AImage, System::UnicodeString ImageClassName);

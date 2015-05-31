@@ -1,8 +1,8 @@
 ﻿// CodeGear C++Builder
-// Copyright (c) 1995, 2014 by Embarcadero Technologies, Inc.
+// Copyright (c) 1995, 2015 by Embarcadero Technologies, Inc.
 // All rights reserved
 
-// (DO NOT EDIT: machine generated header) 'PdfTypes.pas' rev: 28.00 (Windows)
+// (DO NOT EDIT: machine generated header) 'PdfTypes.pas' rev: 29.00 (Windows)
 
 #ifndef PdftypesHPP
 #define PdftypesHPP
@@ -12,16 +12,38 @@
 #pragma option -w-      // All warnings off
 #pragma option -Vx      // Zero-length empty class member 
 #pragma pack(push,8)
-#include <System.hpp>	// Pascal unit
-#include <SysInit.hpp>	// Pascal unit
-#include <System.SysUtils.hpp>	// Pascal unit
-#include <System.Classes.hpp>	// Pascal unit
-#include <Winapi.Windows.hpp>	// Pascal unit
+#include <System.hpp>
+#include <SysInit.hpp>
+#include <System.SysUtils.hpp>
+#include <System.Classes.hpp>
+#include <Winapi.Windows.hpp>
 
 //-- user supplied -----------------------------------------------------------
 
 namespace Pdftypes
 {
+//-- forward type declarations -----------------------------------------------
+struct TPdfRect;
+class DELPHICLASS TPdfObjectMgr;
+class DELPHICLASS TPdfObject;
+class DELPHICLASS TPdfVirtualObject;
+class DELPHICLASS TPdfBoolean;
+class DELPHICLASS TPdfNull;
+class DELPHICLASS TPdfNumber;
+class DELPHICLASS TPdfReal;
+class DELPHICLASS TPdfString;
+class DELPHICLASS TPdfText;
+class DELPHICLASS TPdfName;
+class DELPHICLASS TPdfArray;
+class DELPHICLASS TPdfDictionaryElement;
+class DELPHICLASS TPdfDictionary;
+class DELPHICLASS TPdfStream;
+class DELPHICLASS TPdfBinary;
+class DELPHICLASS TPdfXObject;
+class DELPHICLASS TPdfImage;
+class DELPHICLASS TPdfOutlines;
+class DELPHICLASS EPdfInvalidValue;
+class DELPHICLASS EPdfInvalidOperation;
 //-- type declarations -------------------------------------------------------
 struct DECLSPEC_DRECORD TPdfRect
 {
@@ -37,9 +59,6 @@ enum DECLSPEC_DENUM TPdfObjectType : unsigned char { otDirectObject, otIndirectO
 
 enum DECLSPEC_DENUM TPdfAlignment : unsigned char { paLeftJustify, paRightJustify, paCenter };
 
-class DELPHICLASS TPdfObjectMgr;
-class DELPHICLASS TPdfObject;
-#pragma pack(push,4)
 class PASCALIMPLEMENTATION TPdfObjectMgr : public System::TObject
 {
 	typedef System::TObject inherited;
@@ -53,9 +72,7 @@ public:
 	
 };
 
-#pragma pack(pop)
 
-#pragma pack(push,4)
 class PASCALIMPLEMENTATION TPdfObject : public System::TObject
 {
 	typedef System::TObject inherited;
@@ -81,10 +98,7 @@ public:
 	
 };
 
-#pragma pack(pop)
 
-class DELPHICLASS TPdfVirtualObject;
-#pragma pack(push,4)
 class PASCALIMPLEMENTATION TPdfVirtualObject : public TPdfObject
 {
 	typedef TPdfObject inherited;
@@ -97,10 +111,7 @@ public:
 	
 };
 
-#pragma pack(pop)
 
-class DELPHICLASS TPdfBoolean;
-#pragma pack(push,4)
 class PASCALIMPLEMENTATION TPdfBoolean : public TPdfObject
 {
 	typedef TPdfObject inherited;
@@ -122,10 +133,7 @@ public:
 	
 };
 
-#pragma pack(pop)
 
-class DELPHICLASS TPdfNull;
-#pragma pack(push,4)
 class PASCALIMPLEMENTATION TPdfNull : public TPdfObject
 {
 	typedef TPdfObject inherited;
@@ -140,10 +148,7 @@ public:
 	
 };
 
-#pragma pack(pop)
 
-class DELPHICLASS TPdfNumber;
-#pragma pack(push,4)
 class PASCALIMPLEMENTATION TPdfNumber : public TPdfObject
 {
 	typedef TPdfObject inherited;
@@ -165,9 +170,7 @@ public:
 	
 };
 
-#pragma pack(pop)
 
-class DELPHICLASS TPdfReal;
 class PASCALIMPLEMENTATION TPdfReal : public TPdfObject
 {
 	typedef TPdfObject inherited;
@@ -190,8 +193,6 @@ public:
 };
 
 
-class DELPHICLASS TPdfString;
-#pragma pack(push,4)
 class PASCALIMPLEMENTATION TPdfString : public TPdfObject
 {
 	typedef TPdfObject inherited;
@@ -213,10 +214,7 @@ public:
 	
 };
 
-#pragma pack(pop)
 
-class DELPHICLASS TPdfText;
-#pragma pack(push,4)
 class PASCALIMPLEMENTATION TPdfText : public TPdfObject
 {
 	typedef TPdfObject inherited;
@@ -238,10 +236,7 @@ public:
 	
 };
 
-#pragma pack(pop)
 
-class DELPHICLASS TPdfName;
-#pragma pack(push,4)
 class PASCALIMPLEMENTATION TPdfName : public TPdfObject
 {
 	typedef TPdfObject inherited;
@@ -264,10 +259,7 @@ public:
 	
 };
 
-#pragma pack(pop)
 
-class DELPHICLASS TPdfArray;
-#pragma pack(push,4)
 class PASCALIMPLEMENTATION TPdfArray : public TPdfObject
 {
 	typedef TPdfObject inherited;
@@ -296,10 +288,7 @@ public:
 	
 };
 
-#pragma pack(pop)
 
-class DELPHICLASS TPdfDictionaryElement;
-#pragma pack(push,4)
 class PASCALIMPLEMENTATION TPdfDictionaryElement : public System::TObject
 {
 	typedef System::TObject inherited;
@@ -319,10 +308,7 @@ public:
 	__property bool IsInternal = {read=FIsInternal, nodefault};
 };
 
-#pragma pack(pop)
 
-class DELPHICLASS TPdfDictionary;
-#pragma pack(push,4)
 class PASCALIMPLEMENTATION TPdfDictionary : public TPdfObject
 {
 	typedef TPdfObject inherited;
@@ -361,10 +347,7 @@ public:
 	
 };
 
-#pragma pack(pop)
 
-class DELPHICLASS TPdfStream;
-#pragma pack(push,4)
 class PASCALIMPLEMENTATION TPdfStream : public TPdfObject
 {
 	typedef TPdfObject inherited;
@@ -386,10 +369,7 @@ public:
 	
 };
 
-#pragma pack(pop)
 
-class DELPHICLASS TPdfBinary;
-#pragma pack(push,4)
 class PASCALIMPLEMENTATION TPdfBinary : public TPdfObject
 {
 	typedef TPdfObject inherited;
@@ -406,12 +386,9 @@ public:
 	__property System::Classes::TStream* Stream = {read=FStream};
 };
 
-#pragma pack(pop)
 
 typedef System::UnicodeString TPdfDate;
 
-class DELPHICLASS TPdfXObject;
-#pragma pack(push,4)
 class PASCALIMPLEMENTATION TPdfXObject : public TPdfStream
 {
 	typedef TPdfStream inherited;
@@ -425,10 +402,7 @@ public:
 	
 };
 
-#pragma pack(pop)
 
-class DELPHICLASS TPdfImage;
-#pragma pack(push,4)
 class PASCALIMPLEMENTATION TPdfImage : public TPdfXObject
 {
 	typedef TPdfXObject inherited;
@@ -442,10 +416,7 @@ public:
 	
 };
 
-#pragma pack(pop)
 
-class DELPHICLASS TPdfOutlines;
-#pragma pack(push,4)
 class PASCALIMPLEMENTATION TPdfOutlines : public TPdfDictionary
 {
 	typedef TPdfDictionary inherited;
@@ -459,10 +430,7 @@ public:
 	
 };
 
-#pragma pack(pop)
 
-class DELPHICLASS EPdfInvalidValue;
-#pragma pack(push,4)
 class PASCALIMPLEMENTATION EPdfInvalidValue : public System::Sysutils::Exception
 {
 	typedef System::Sysutils::Exception inherited;
@@ -484,10 +452,7 @@ public:
 	
 };
 
-#pragma pack(pop)
 
-class DELPHICLASS EPdfInvalidOperation;
-#pragma pack(push,4)
 class PASCALIMPLEMENTATION EPdfInvalidOperation : public System::Sysutils::Exception
 {
 	typedef System::Sysutils::Exception inherited;
@@ -509,7 +474,6 @@ public:
 	
 };
 
-#pragma pack(pop)
 
 //-- var, const, procedure ---------------------------------------------------
 static const bool USE_ZLIB = false;
