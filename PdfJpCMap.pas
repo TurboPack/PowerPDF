@@ -1,7 +1,7 @@
 {*
  * << P o w e r P d f >> -- PdfJpCMap.pas
  *
- * << conversion routines from japanese charactor code to CID >>
+ * << conversion routines from japanese character code to CID >>
  *
  * Copyright (c) 1999-2001 Takezou. <takeshi_kanno@est.hi-ho.ne.jp>
  *

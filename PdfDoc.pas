@@ -1299,7 +1299,7 @@ begin
   Result := 0;
   tmpTotalWidth := 0;
 
-  // calculate number of charactor contain in the specified width.
+  // calculate number of character contain in the specified width.
   for i := 1 to Length(Text) do
   begin
     ch := Text[i];

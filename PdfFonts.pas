@@ -1,7 +1,7 @@
 {*
  * << P o w e r P d f >> -- PdfFonts.pas
  *
- * << Standerd font set for WinAnsiEncoding Charactors >>
+ * << Standerd font set for WinAnsiEncoding Characters >>
  *
  * Copyright (c) 1999-2001 Takezou. <takeshi_kanno@est.hi-ho.ne.jp>
  *

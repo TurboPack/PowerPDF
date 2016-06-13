@@ -135,7 +135,7 @@ var
   APos: integer;
   NewRect: TRect;
 begin
-  // omitting LF charactors from CRLF sequence.
+  // omitting LF characters from CRLF sequence.
   S := Text;
   APos := pos(#13#10, S);
   while APos > 0 do

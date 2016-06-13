@@ -1,7 +1,7 @@
 {*
  * << P o w e r P d f >> -- PdfGBFonts.pas
  *
- * << Japanese font set for Shift-JIS Charactors >>
+ * << Japanese font set for Shift-JIS Characters >>
  *
  * Copyright (c) 1999-1101 Takezou. <takeshi_kanno@est.hi-ho.ne.jp>
  *
