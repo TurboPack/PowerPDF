@@ -26,7 +26,7 @@ unit PdfFonts;
 interface
 
 uses
-  SysUtils, Classes, PdfDoc, PdfTypes;
+  SysUtils, Classes, Generics.Collections, PdfDoc, PdfTypes;
 
 const
   TYPE1_FONT_STR_TABLE: array[0..2] of TPDF_STR_TBL =(
@@ -491,8 +491,10 @@ type
   private
     FFirstChar: Byte;
     FLastChar: Byte;
-    FArray: array[0..255] of Word;
+    FArray: TDictionary<Integer, Integer>;
   public
+    constructor Create(AXref: TPdfXref; AName: string); override;
+    destructor Destroy; override;
     procedure SetData(Value: TPdfDictionary); override;
     function GetCharWidth(AText: string; APos: integer): integer; override;
   end;
@@ -565,27 +567,41 @@ type
 implementation
 
 { TPdfType1Font }
-function TPdfType1Font.GetCharWidth(AText: string; APos: integer): integer;
+
+constructor TPdfType1Font.Create(AXref: TPdfXref; AName: string);
 begin
-  result := FArray[ord(AText[APos])];
+  inherited Create(AXref, AName);
+  FArray := TDictionary<Integer, Integer>.Create;
+end;
+
+destructor TPdfType1Font.Destroy;
+begin
+  FArray.Free;
+  inherited Destroy;
+end;
+
+function TPdfType1Font.GetCharWidth(AText: string; APos: integer): integer;
+var
+  lDefaultWidth: Word;
+begin
+  if not FArray.TryGetValue(APos, Result) then
+  begin
+    // initialize char widths array by default value (if missing width parameter
+    // is defined, use it as default value.)
+    if Data.PdfNumberByName('MissingWidth') <> nil then
+      lDefaultWidth := Data.PdfNumberByName('MissingWidth').Value
+    else
+      lDefaultWidth := 0;
+    Result := lDefaultWidth;
+  end;
 end;
 
 procedure TPdfType1Font.SetData(Value: TPdfDictionary);
 var
   i: integer;
-  DefaultWidth: Word;
   Widths: TPdfArray;
 begin
   inherited SetData(Value);
-
-  // initialize char widths array by default value (if missing width parameter
-  // is defined, use it as default value.)
-  if Data.PdfNumberByName('MissingWidth') <> nil then
-    DefaultWidth := Data.PdfNumberByName('MissingWidth').Value
-  else
-    DefaultWidth := 0;
-  for i := 0 to 255 do
-    FArray[i] := DefaultWidth;
 
   FFirstChar := Data.PdfNumberByName('FirstChar').Value;
   FLastChar := Data.PdfNumberByName('LastChar').Value;
@@ -593,7 +609,7 @@ begin
   // fill width array with "Widths" table values.
   Widths := Data.PdfArrayByName('Widths');
   for i := 0 to Widths.ItemCount - 1 do
-    FArray[i + FFirstChar] := TPdfNumber(Widths.Items[i]).Value;
+    FArray.Add(i + FFirstChar, TPdfNumber(Widths.Items[i]).Value);
 end;
 
 { FixedWidth }
