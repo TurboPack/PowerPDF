@@ -584,7 +584,7 @@ function TPdfType1Font.GetCharWidth(AText: string; APos: integer): integer;
 var
   lDefaultWidth: Word;
 begin
-  if not FArray.TryGetValue(Ord(AText[APos], Result) then
+  if not FArray.TryGetValue(Ord(AText[APos]), Result) then
   begin
     // initialize char widths array by default value (if missing width parameter
     // is defined, use it as default value.)
