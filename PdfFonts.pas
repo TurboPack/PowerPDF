@@ -32,8 +32,9 @@ const
   TYPE1_FONT_STR_TABLE: array[0..2] of TPDF_STR_TBL =(
                          (KEY: 'Type'; VAL: 'Font'),
                          (KEY: 'Subtype'; VAL: 'Type1'),
-                         (KEY: 'Encoding'; VAL: 'WinAnsiEncoding')
+                         (KEY: 'Encoding'; VAL: 'CP1251')
                          );
+
 
   // FixedWidth defination
   FIXED_WIDTH_W_ARRAY: array[32..255] of Integer = (
@@ -61,7 +62,7 @@ const
   FIXED_WIDTH_DISC_STR_TABLE: array[0..2] of TPDF_STR_TBL =(
                          (KEY: 'Type'; VAL: 'FontDescriptor'),
                          (KEY: 'FontName'; VAL: 'Type1'),
-                         (KEY: 'Encoding'; VAL: 'WinAnsiEncoding')
+                         (KEY: 'Encoding'; VAL: 'CP1251')
                          );
 
   FIXED_WIDTH_DISC_INT_TABLE: array[0..6] of TPDF_INT_TBL =(
@@ -196,7 +197,7 @@ const
   ARIAL_DISC_STR_TABLE: array[0..2] of TPDF_STR_TBL = (
                          (KEY: 'Type'; VAL: 'FontDescriptor'),
                          (KEY: 'FontName'; VAL: 'Type1'),
-                         (KEY: 'Encoding'; VAL: 'WinAnsiEncoding')
+                         (KEY: 'Encoding'; VAL: 'CP1251'')
                          );
 
   ARIAL_DISC_INT_TABLE: array[0..6] of TPDF_INT_TBL = (
@@ -265,7 +266,7 @@ const
   ARIAL_ITALIC_DISC_STR_TABLE: array[0..2] of TPDF_STR_TBL =(
                          (KEY: 'Type'; VAL: 'FontDescriptor'),
                          (KEY: 'FontName'; VAL: 'Type1'),
-                         (KEY: 'Encoding'; VAL: 'WinAnsiEncoding')
+                         (KEY: 'Encoding'; VAL: 'CP1251'')
                          );
 
   ARIAL_ITALIC_DISC_INT_TABLE: array[0..6] of TPDF_INT_TBL =(
@@ -338,7 +339,7 @@ const
   TIMES_DISC_STR_TABLE: array[0..2] of TPDF_STR_TBL =(
                          (KEY: 'Type'; VAL: 'FontDescriptor'),
                          (KEY: 'FontName'; VAL: 'Type1'),
-                         (KEY: 'Encoding'; VAL: 'WinAnsiEncoding')
+                         (KEY: 'Encoding'; VAL: 'CP1251'')
                          );
 
   TIMES_DISC_INT_TABLE: array[0..6] of TPDF_INT_TBL =(
@@ -472,7 +473,7 @@ const
   SCRIPT_DISC_STR_TABLE: array[0..2] of TPDF_STR_TBL =(
                          (KEY: 'Type'; VAL: 'FontDescriptor'),
                          (KEY: 'FontName'; VAL: 'Type1'),
-                         (KEY: 'Encoding'; VAL: 'WinAnsiEncoding')
+                         (KEY: 'Encoding'; VAL: 'CP1251'')
                          );
 
   SCRIPT_DISC_INT_TABLE: array[0..6] of TPDF_INT_TBL =(
