@@ -1,7 +1,8 @@
 # PowerPDF
 
-Updated for 10.3 Rio / VER330 / PKG 260
-You can find [10.2 Tokyo](https://github.com/TurboPack-Tokyo/PowerPDF) and [10.1 Berlin](https://github.com/TurboPack/PowerPDF/releases/tag/101Berlin) still too.
+Updated for **10.3 Rio / VER330 / PKG 260**
+
+You can still find [10.2 Tokyo](https://github.com/TurboPack-Tokyo/PowerPDF) and [10.1 Berlin](https://github.com/TurboPack/PowerPDF/releases/tag/101Berlin) still too.
 
 ## Table of contents
 
@@ -24,11 +25,13 @@ Like Forms, you can design PDF document easily on Delphi IDE.
 
 PowerPDF package names have the following form:
 
-PowerPDFDR.bpl (Delphi Runtime)
-PowerPDFDD.bpl (Delphi Designtime)
+Delphi
+* PowerPDFDR.bpl (Delphi Runtime)
+* PowerPDFDD.bpl (Delphi Designtime)
 
-PowerPDFCR.bpl (C++Builder Runtime)
-PowerPDFCD.bpl (C++Builder Designtime)
+C++Builder
+* PowerPDFCR.bpl (C++Builder Runtime)
+* PowerPDFCD.bpl (C++Builder Designtime)
 
 -------
 
