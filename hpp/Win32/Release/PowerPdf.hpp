@@ -2,7 +2,7 @@
 // Copyright (c) 1995, 2017 by Embarcadero Technologies, Inc.
 // All rights reserved
 
-// (DO NOT EDIT: machine generated header) 'PowerPdf.pas' rev: 32.00 (Windows)
+// (DO NOT EDIT: machine generated header) 'PowerPdf.pas' rev: 33.00 (Windows)
 
 #ifndef PowerpdfHPP
 #define PowerpdfHPP
@@ -26,7 +26,7 @@ namespace Powerpdf
 //-- forward type declarations -----------------------------------------------
 //-- type declarations -------------------------------------------------------
 //-- var, const, procedure ---------------------------------------------------
-extern DELPHI_PACKAGE void __fastcall Register(void);
+extern DELPHI_PACKAGE void __fastcall Register();
 }	/* namespace Powerpdf */
 #if !defined(DELPHIHEADER_NO_IMPLICIT_NAMESPACE_USE) && !defined(NO_USING_NAMESPACE_POWERPDF)
 using namespace Powerpdf;

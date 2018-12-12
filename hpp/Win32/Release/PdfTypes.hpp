@@ -2,7 +2,7 @@
 // Copyright (c) 1995, 2017 by Embarcadero Technologies, Inc.
 // All rights reserved
 
-// (DO NOT EDIT: machine generated header) 'PdfTypes.pas' rev: 32.00 (Windows)
+// (DO NOT EDIT: machine generated header) 'PdfTypes.pas' rev: 33.00 (Windows)
 
 #ifndef PdftypesHPP
 #define PdftypesHPP
@@ -68,8 +68,8 @@ public:
 	virtual void __fastcall AddObject(TPdfObject* AObject) = 0 ;
 	virtual TPdfObject* __fastcall GetObject(int ObjectID) = 0 ;
 public:
-	/* TObject.Create */ inline __fastcall TPdfObjectMgr(void) : System::TObject() { }
-	/* TObject.Destroy */ inline __fastcall virtual ~TPdfObjectMgr(void) { }
+	/* TObject.Create */ inline __fastcall TPdfObjectMgr() : System::TObject() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TPdfObjectMgr() { }
 	
 };
 
@@ -90,14 +90,14 @@ protected:
 	
 public:
 	void __fastcall SetObjectNumber(int Value);
-	__fastcall virtual TPdfObject(void);
+	__fastcall virtual TPdfObject();
 	void __fastcall WriteToStream(System::Classes::TStream* const AStream);
 	void __fastcall WriteValueToStream(System::Classes::TStream* const AStream);
 	__property int ObjectNumber = {read=FObjectNumber, nodefault};
 	__property int GenerationNumber = {read=FGenerationNumber, nodefault};
 	__property TPdfObjectType ObjectType = {read=FObjectType, nodefault};
 public:
-	/* TObject.Destroy */ inline __fastcall virtual ~TPdfObject(void) { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TPdfObject() { }
 	
 };
 
@@ -109,10 +109,10 @@ class PASCALIMPLEMENTATION TPdfVirtualObject : public TPdfObject
 	typedef TPdfObject inherited;
 	
 public:
-	__fastcall virtual TPdfVirtualObject(void);
+	__fastcall virtual TPdfVirtualObject();
 	__fastcall TPdfVirtualObject(int AObjectId);
 public:
-	/* TObject.Destroy */ inline __fastcall virtual ~TPdfVirtualObject(void) { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TPdfVirtualObject() { }
 	
 };
 
@@ -133,10 +133,10 @@ public:
 	__fastcall TPdfBoolean(bool AValue);
 	__property bool Value = {read=FValue, write=FValue, nodefault};
 public:
-	/* TPdfObject.Create */ inline __fastcall virtual TPdfBoolean(void) : TPdfObject() { }
+	/* TPdfObject.Create */ inline __fastcall virtual TPdfBoolean() : TPdfObject() { }
 	
 public:
-	/* TObject.Destroy */ inline __fastcall virtual ~TPdfBoolean(void) { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TPdfBoolean() { }
 	
 };
 
@@ -150,10 +150,10 @@ class PASCALIMPLEMENTATION TPdfNull : public TPdfObject
 protected:
 	virtual void __fastcall InternalWriteStream(System::Classes::TStream* const AStream);
 public:
-	/* TPdfObject.Create */ inline __fastcall virtual TPdfNull(void) : TPdfObject() { }
+	/* TPdfObject.Create */ inline __fastcall virtual TPdfNull() : TPdfObject() { }
 	
 public:
-	/* TObject.Destroy */ inline __fastcall virtual ~TPdfNull(void) { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TPdfNull() { }
 	
 };
 
@@ -174,10 +174,10 @@ public:
 	__fastcall TPdfNumber(int AValue);
 	__property int Value = {read=FValue, write=FValue, nodefault};
 public:
-	/* TPdfObject.Create */ inline __fastcall virtual TPdfNumber(void) : TPdfObject() { }
+	/* TPdfObject.Create */ inline __fastcall virtual TPdfNumber() : TPdfObject() { }
 	
 public:
-	/* TObject.Destroy */ inline __fastcall virtual ~TPdfNumber(void) { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TPdfNumber() { }
 	
 };
 
@@ -197,10 +197,10 @@ public:
 	__fastcall TPdfReal(double AValue);
 	__property double Value = {read=FValue, write=FValue};
 public:
-	/* TPdfObject.Create */ inline __fastcall virtual TPdfReal(void) : TPdfObject() { }
+	/* TPdfObject.Create */ inline __fastcall virtual TPdfReal() : TPdfObject() { }
 	
 public:
-	/* TObject.Destroy */ inline __fastcall virtual ~TPdfReal(void) { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TPdfReal() { }
 	
 };
 
@@ -220,10 +220,10 @@ public:
 	__fastcall TPdfString(System::UnicodeString AValue);
 	__property System::UnicodeString Value = {read=FValue, write=FValue};
 public:
-	/* TPdfObject.Create */ inline __fastcall virtual TPdfString(void) : TPdfObject() { }
+	/* TPdfObject.Create */ inline __fastcall virtual TPdfString() : TPdfObject() { }
 	
 public:
-	/* TObject.Destroy */ inline __fastcall virtual ~TPdfString(void) { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TPdfString() { }
 	
 };
 
@@ -244,10 +244,10 @@ public:
 	__fastcall TPdfText(System::UnicodeString AValue);
 	__property System::UnicodeString Value = {read=FValue, write=FValue};
 public:
-	/* TPdfObject.Create */ inline __fastcall virtual TPdfText(void) : TPdfObject() { }
+	/* TPdfObject.Create */ inline __fastcall virtual TPdfText() : TPdfObject() { }
 	
 public:
-	/* TObject.Destroy */ inline __fastcall virtual ~TPdfText(void) { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TPdfText() { }
 	
 };
 
@@ -269,10 +269,10 @@ public:
 	__fastcall TPdfName(System::UnicodeString AValue);
 	__property System::UnicodeString Value = {read=FValue, write=FValue};
 public:
-	/* TPdfObject.Create */ inline __fastcall virtual TPdfName(void) : TPdfObject() { }
+	/* TPdfObject.Create */ inline __fastcall virtual TPdfName() : TPdfObject() { }
 	
 public:
-	/* TObject.Destroy */ inline __fastcall virtual ~TPdfName(void) { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TPdfName() { }
 	
 };
 
@@ -287,7 +287,7 @@ private:
 	System::Classes::TList* FArray;
 	TPdfObjectMgr* FObjectMgr;
 	TPdfObject* __fastcall GetItems(int Index);
-	int __fastcall GetItemCount(void);
+	int __fastcall GetItemCount();
 	
 protected:
 	virtual void __fastcall InternalWriteStream(System::Classes::TStream* const AStream);
@@ -295,7 +295,7 @@ protected:
 public:
 	__fastcall TPdfArray(TPdfObjectMgr* AObjectMgr);
 	__fastcall TPdfArray(TPdfObjectMgr* AObjectMgr, int *AArray, const int AArray_High);
-	__fastcall virtual ~TPdfArray(void);
+	__fastcall virtual ~TPdfArray();
 	void __fastcall AddItem(TPdfObject* AItem);
 	TPdfName* __fastcall FindName(System::UnicodeString AName);
 	bool __fastcall RemoveName(System::UnicodeString AName);
@@ -303,7 +303,7 @@ public:
 	__property int ItemCount = {read=GetItemCount, nodefault};
 	__property TPdfObjectMgr* ObjectMgr = {read=FObjectMgr};
 public:
-	/* TPdfObject.Create */ inline __fastcall virtual TPdfArray(void) : TPdfObject() { }
+	/* TPdfObject.Create */ inline __fastcall virtual TPdfArray() : TPdfObject() { }
 	
 };
 
@@ -318,12 +318,12 @@ private:
 	TPdfName* FKey;
 	TPdfObject* FValue;
 	bool FIsInternal;
-	System::UnicodeString __fastcall GetKey(void);
+	System::UnicodeString __fastcall GetKey();
 	
 public:
 	__fastcall TPdfDictionaryElement(System::UnicodeString AKey, TPdfObject* AValue);
 	__fastcall TPdfDictionaryElement(System::UnicodeString AKey, TPdfObject* AValue, void * AVoid);
-	__fastcall virtual ~TPdfDictionaryElement(void);
+	__fastcall virtual ~TPdfDictionaryElement();
 	__property System::UnicodeString Key = {read=GetKey};
 	__property TPdfObject* Value = {read=FValue};
 	__property bool IsInternal = {read=FIsInternal, nodefault};
@@ -340,14 +340,14 @@ private:
 	System::Classes::TList* FArray;
 	TPdfObjectMgr* FObjectMgr;
 	TPdfDictionaryElement* __fastcall GetItems(int Index);
-	int __fastcall GetItemCount(void);
+	int __fastcall GetItemCount();
 	
 protected:
 	virtual void __fastcall InternalWriteStream(System::Classes::TStream* const AStream);
 	
 public:
 	__fastcall TPdfDictionary(TPdfObjectMgr* AObjectMgr);
-	__fastcall virtual ~TPdfDictionary(void);
+	__fastcall virtual ~TPdfDictionary();
 	TPdfObject* __fastcall ValueByName(System::UnicodeString AKey);
 	TPdfBoolean* __fastcall PdfBooleanByName(System::UnicodeString AKey);
 	TPdfNumber* __fastcall PdfNumberByName(System::UnicodeString AKey);
@@ -366,7 +366,7 @@ public:
 	__property int ItemCount = {read=GetItemCount, nodefault};
 	__property TPdfObjectMgr* ObjectMgr = {read=FObjectMgr};
 public:
-	/* TPdfObject.Create */ inline __fastcall virtual TPdfDictionary(void) : TPdfObject() { }
+	/* TPdfObject.Create */ inline __fastcall virtual TPdfDictionary() : TPdfObject() { }
 	
 };
 
@@ -386,11 +386,11 @@ protected:
 	
 public:
 	__fastcall TPdfStream(TPdfObjectMgr* AObjectMgr);
-	__fastcall virtual ~TPdfStream(void);
+	__fastcall virtual ~TPdfStream();
 	__property TPdfDictionary* Attributes = {read=FAttributes};
 	__property System::Classes::TStream* Stream = {read=FStream};
 public:
-	/* TPdfObject.Create */ inline __fastcall virtual TPdfStream(void) : TPdfObject() { }
+	/* TPdfObject.Create */ inline __fastcall virtual TPdfStream() : TPdfObject() { }
 	
 };
 
@@ -408,8 +408,8 @@ protected:
 	virtual void __fastcall InternalWriteStream(System::Classes::TStream* const AStream);
 	
 public:
-	__fastcall virtual TPdfBinary(void);
-	__fastcall virtual ~TPdfBinary(void);
+	__fastcall virtual TPdfBinary();
+	__fastcall virtual ~TPdfBinary();
 	__property System::Classes::TStream* Stream = {read=FStream};
 };
 
@@ -424,10 +424,10 @@ class PASCALIMPLEMENTATION TPdfXObject : public TPdfStream
 	
 public:
 	/* TPdfStream.CreateStream */ inline __fastcall TPdfXObject(TPdfObjectMgr* AObjectMgr) : TPdfStream(AObjectMgr) { }
-	/* TPdfStream.Destroy */ inline __fastcall virtual ~TPdfXObject(void) { }
+	/* TPdfStream.Destroy */ inline __fastcall virtual ~TPdfXObject() { }
 	
 public:
-	/* TPdfObject.Create */ inline __fastcall virtual TPdfXObject(void) : TPdfStream() { }
+	/* TPdfObject.Create */ inline __fastcall virtual TPdfXObject() : TPdfStream() { }
 	
 };
 
@@ -440,10 +440,10 @@ class PASCALIMPLEMENTATION TPdfImage : public TPdfXObject
 	
 public:
 	/* TPdfStream.CreateStream */ inline __fastcall TPdfImage(TPdfObjectMgr* AObjectMgr) : TPdfXObject(AObjectMgr) { }
-	/* TPdfStream.Destroy */ inline __fastcall virtual ~TPdfImage(void) { }
+	/* TPdfStream.Destroy */ inline __fastcall virtual ~TPdfImage() { }
 	
 public:
-	/* TPdfObject.Create */ inline __fastcall virtual TPdfImage(void) : TPdfXObject() { }
+	/* TPdfObject.Create */ inline __fastcall virtual TPdfImage() : TPdfXObject() { }
 	
 };
 
@@ -456,10 +456,10 @@ class PASCALIMPLEMENTATION TPdfOutlines : public TPdfDictionary
 	
 public:
 	/* TPdfDictionary.CreateDictionary */ inline __fastcall TPdfOutlines(TPdfObjectMgr* AObjectMgr) : TPdfDictionary(AObjectMgr) { }
-	/* TPdfDictionary.Destroy */ inline __fastcall virtual ~TPdfOutlines(void) { }
+	/* TPdfDictionary.Destroy */ inline __fastcall virtual ~TPdfOutlines() { }
 	
 public:
-	/* TPdfObject.Create */ inline __fastcall virtual TPdfOutlines(void) : TPdfDictionary() { }
+	/* TPdfObject.Create */ inline __fastcall virtual TPdfOutlines() : TPdfDictionary() { }
 	
 };
 
@@ -483,7 +483,7 @@ public:
 	/* Exception.CreateResHelp */ inline __fastcall EPdfInvalidValue(System::PResStringRec ResStringRec, int AHelpContext)/* overload */ : System::Sysutils::Exception(ResStringRec, AHelpContext) { }
 	/* Exception.CreateResFmtHelp */ inline __fastcall EPdfInvalidValue(System::PResStringRec ResStringRec, const System::TVarRec *Args, const int Args_High, int AHelpContext)/* overload */ : System::Sysutils::Exception(ResStringRec, Args, Args_High, AHelpContext) { }
 	/* Exception.CreateResFmtHelp */ inline __fastcall EPdfInvalidValue(NativeUInt Ident, const System::TVarRec *Args, const int Args_High, int AHelpContext)/* overload */ : System::Sysutils::Exception(Ident, Args, Args_High, AHelpContext) { }
-	/* Exception.Destroy */ inline __fastcall virtual ~EPdfInvalidValue(void) { }
+	/* Exception.Destroy */ inline __fastcall virtual ~EPdfInvalidValue() { }
 	
 };
 
@@ -507,7 +507,7 @@ public:
 	/* Exception.CreateResHelp */ inline __fastcall EPdfInvalidOperation(System::PResStringRec ResStringRec, int AHelpContext)/* overload */ : System::Sysutils::Exception(ResStringRec, AHelpContext) { }
 	/* Exception.CreateResFmtHelp */ inline __fastcall EPdfInvalidOperation(System::PResStringRec ResStringRec, const System::TVarRec *Args, const int Args_High, int AHelpContext)/* overload */ : System::Sysutils::Exception(ResStringRec, Args, Args_High, AHelpContext) { }
 	/* Exception.CreateResFmtHelp */ inline __fastcall EPdfInvalidOperation(NativeUInt Ident, const System::TVarRec *Args, const int Args_High, int AHelpContext)/* overload */ : System::Sysutils::Exception(Ident, Args, Args_High, AHelpContext) { }
-	/* Exception.Destroy */ inline __fastcall virtual ~EPdfInvalidOperation(void) { }
+	/* Exception.Destroy */ inline __fastcall virtual ~EPdfInvalidOperation() { }
 	
 };
 
@@ -533,7 +533,7 @@ extern DELPHI_PACKAGE System::UnicodeString __fastcall _EscapeText(const System:
 extern DELPHI_PACKAGE System::UnicodeString __fastcall _GetTypeOf(TPdfDictionary* ADictionary);
 extern DELPHI_PACKAGE void __fastcall _WriteString(const System::UnicodeString Value, System::Classes::TStream* AStream);
 extern DELPHI_PACKAGE System::UnicodeString __fastcall _FloatToStrR(System::Extended Value);
-extern DELPHI_PACKAGE System::UnicodeString __fastcall _GetUnicodeHeader(void);
+extern DELPHI_PACKAGE System::UnicodeString __fastcall _GetUnicodeHeader();
 extern DELPHI_PACKAGE TPdfRect __fastcall _PdfRect(float Left, float Top, float Right, float Bottom);
 extern DELPHI_PACKAGE int __fastcall _GetCharCount(System::UnicodeString Text);
 }	/* namespace Pdftypes */

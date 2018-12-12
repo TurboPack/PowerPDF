@@ -2,7 +2,7 @@
 // Copyright (c) 1995, 2017 by Embarcadero Technologies, Inc.
 // All rights reserved
 
-// (DO NOT EDIT: machine generated header) 'PdfImages.pas' rev: 32.00 (Windows)
+// (DO NOT EDIT: machine generated header) 'PdfImages.pas' rev: 33.00 (Windows)
 
 #ifndef PdfimagesHPP
 #define PdfimagesHPP
@@ -38,10 +38,10 @@ class PASCALIMPLEMENTATION TPdfImageCreator : public System::Classes::TPersisten
 public:
 	virtual Pdftypes::TPdfImage* __fastcall CreateImage(Vcl::Graphics::TGraphic* AImage);
 public:
-	/* TPersistent.Destroy */ inline __fastcall virtual ~TPdfImageCreator(void) { }
+	/* TPersistent.Destroy */ inline __fastcall virtual ~TPdfImageCreator() { }
 	
 public:
-	/* TObject.Create */ inline __fastcall TPdfImageCreator(void) : System::Classes::TPersistent() { }
+	/* TObject.Create */ inline __fastcall TPdfImageCreator() : System::Classes::TPersistent() { }
 	
 };
 
@@ -58,10 +58,10 @@ private:
 public:
 	virtual Pdftypes::TPdfImage* __fastcall CreateImage(Vcl::Graphics::TGraphic* AImage);
 public:
-	/* TPersistent.Destroy */ inline __fastcall virtual ~TPdfBitmapImage(void) { }
+	/* TPersistent.Destroy */ inline __fastcall virtual ~TPdfBitmapImage() { }
 	
 public:
-	/* TObject.Create */ inline __fastcall TPdfBitmapImage(void) : TPdfImageCreator() { }
+	/* TObject.Create */ inline __fastcall TPdfBitmapImage() : TPdfImageCreator() { }
 	
 };
 
@@ -85,7 +85,7 @@ public:
 	/* Exception.CreateResHelp */ inline __fastcall EPdfInvalidImageFormat(System::PResStringRec ResStringRec, int AHelpContext)/* overload */ : System::Sysutils::Exception(ResStringRec, AHelpContext) { }
 	/* Exception.CreateResFmtHelp */ inline __fastcall EPdfInvalidImageFormat(System::PResStringRec ResStringRec, const System::TVarRec *Args, const int Args_High, int AHelpContext)/* overload */ : System::Sysutils::Exception(ResStringRec, Args, Args_High, AHelpContext) { }
 	/* Exception.CreateResFmtHelp */ inline __fastcall EPdfInvalidImageFormat(NativeUInt Ident, const System::TVarRec *Args, const int Args_High, int AHelpContext)/* overload */ : System::Sysutils::Exception(Ident, Args, Args_High, AHelpContext) { }
-	/* Exception.Destroy */ inline __fastcall virtual ~EPdfInvalidImageFormat(void) { }
+	/* Exception.Destroy */ inline __fastcall virtual ~EPdfInvalidImageFormat() { }
 	
 };
 

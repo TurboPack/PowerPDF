@@ -6,3 +6,6 @@ __history
 *.dcu
 *.dsk
 *.~*
+*.obj
+Release
+Debug

@@ -2,7 +2,7 @@
 // Copyright (c) 1995, 2017 by Embarcadero Technologies, Inc.
 // All rights reserved
 
-// (DO NOT EDIT: machine generated header) 'PRJpegImage.pas' rev: 32.00 (Windows)
+// (DO NOT EDIT: machine generated header) 'PRJpegImage.pas' rev: 33.00 (Windows)
 
 #ifndef PrjpegimageHPP
 #define PrjpegimageHPP
@@ -45,7 +45,7 @@ protected:
 	virtual void __fastcall Print(Preport::TPRCanvas* ACanvas, const System::Types::TRect &ARect);
 public:
 	/* TPRImage.Create */ inline __fastcall virtual TPRJpegImage(System::Classes::TComponent* AOwner) : Preport::TPRImage(AOwner) { }
-	/* TPRImage.Destroy */ inline __fastcall virtual ~TPRJpegImage(void) { }
+	/* TPRImage.Destroy */ inline __fastcall virtual ~TPRJpegImage() { }
 	
 };
 

@@ -2,7 +2,7 @@
 // Copyright (c) 1995, 2017 by Embarcadero Technologies, Inc.
 // All rights reserved
 
-// (DO NOT EDIT: machine generated header) 'PdfDoc.pas' rev: 32.00 (Windows)
+// (DO NOT EDIT: machine generated header) 'PdfDoc.pas' rev: 33.00 (Windows)
 
 #ifndef PdfdocHPP
 #define PdfdocHPP
@@ -98,8 +98,8 @@ class PASCALIMPLEMENTATION TPdfHeader : public System::TObject
 protected:
 	void __fastcall WriteToStream(System::Classes::TStream* const AStream);
 public:
-	/* TObject.Create */ inline __fastcall TPdfHeader(void) : System::TObject() { }
-	/* TObject.Destroy */ inline __fastcall virtual ~TPdfHeader(void) { }
+	/* TObject.Create */ inline __fastcall TPdfHeader() : System::TObject() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TPdfHeader() { }
 	
 };
 
@@ -119,7 +119,7 @@ protected:
 	
 public:
 	__fastcall TPdfTrailer(Pdftypes::TPdfObjectMgr* AObjectMgr);
-	__fastcall virtual ~TPdfTrailer(void);
+	__fastcall virtual ~TPdfTrailer();
 	__property int XrefAddress = {read=FXrefAddress, write=FXrefAddress, nodefault};
 	__property Pdftypes::TPdfDictionary* Attributes = {read=FAttributes};
 };
@@ -136,11 +136,11 @@ private:
 	int FByteOffset;
 	int FGenerationNumber;
 	Pdftypes::TPdfObject* FValue;
-	System::UnicodeString __fastcall GetAsString(void);
+	System::UnicodeString __fastcall GetAsString();
 	
 public:
 	__fastcall TPdfXrefEntry(Pdftypes::TPdfObject* AValue);
-	__fastcall virtual ~TPdfXrefEntry(void);
+	__fastcall virtual ~TPdfXrefEntry();
 	__property System::UnicodeString EntryType = {read=FEntryType, write=FEntryType};
 	__property int ByteOffset = {read=FByteOffset, write=FByteOffset, nodefault};
 	__property int GenerationNumber = {read=FGenerationNumber, write=FGenerationNumber, nodefault};
@@ -158,14 +158,14 @@ class PASCALIMPLEMENTATION TPdfXref : public Pdftypes::TPdfObjectMgr
 private:
 	System::Classes::TList* FXrefEntries;
 	TPdfXrefEntry* __fastcall GetItem(int ObjectID);
-	int __fastcall GetItemCount(void);
+	int __fastcall GetItemCount();
 	
 protected:
 	void __fastcall WriteToStream(System::Classes::TStream* const AStream);
 	
 public:
-	__fastcall TPdfXref(void);
-	__fastcall virtual ~TPdfXref(void);
+	__fastcall TPdfXref();
+	__fastcall virtual ~TPdfXref();
 	virtual void __fastcall AddObject(Pdftypes::TPdfObject* AObject);
 	virtual Pdftypes::TPdfObject* __fastcall GetObject(int ObjectID);
 	__property TPdfXrefEntry* Items[int ObjectID] = {read=GetItem};
@@ -180,7 +180,7 @@ class PASCALIMPLEMENTATION TAbstractPReport : public System::Classes::TComponent
 	
 public:
 	/* TComponent.Create */ inline __fastcall virtual TAbstractPReport(System::Classes::TComponent* AOwner) : System::Classes::TComponent(AOwner) { }
-	/* TComponent.Destroy */ inline __fastcall virtual ~TAbstractPReport(void) { }
+	/* TComponent.Destroy */ inline __fastcall virtual ~TAbstractPReport() { }
 	
 };
 
@@ -207,32 +207,32 @@ private:
 	System::Word FDefaultPageHeight;
 	TPdfCompressionMethod FCompressionMethod;
 	bool FUseOutlines;
-	TPdfCanvas* __fastcall GetCanvas(void);
-	TPdfInfo* __fastcall GetInfo(void);
-	TPdfCatalog* __fastcall GetRoot(void);
-	TPdfOutlineRoot* __fastcall GetOutlineRoot(void);
+	TPdfCanvas* __fastcall GetCanvas();
+	TPdfInfo* __fastcall GetInfo();
+	TPdfCatalog* __fastcall GetRoot();
+	TPdfOutlineRoot* __fastcall GetOutlineRoot();
 	
 protected:
-	void __fastcall CreateInfo(void);
-	void __fastcall CreateOutlines(void);
-	Pdftypes::TPdfDictionary* __fastcall CreateCatalog(void);
+	void __fastcall CreateInfo();
+	void __fastcall CreateOutlines();
+	Pdftypes::TPdfDictionary* __fastcall CreateCatalog();
 	TPdfFont* __fastcall CreateFont(System::UnicodeString FontName);
 	Pdftypes::TPdfDictionary* __fastcall CreatePages(Pdftypes::TPdfDictionary* Parent);
 	
 public:
 	void __fastcall RegisterXObject(Pdftypes::TPdfXObject* AObject, System::UnicodeString AName);
-	__fastcall TPdfDoc(void);
-	__fastcall virtual ~TPdfDoc(void);
-	void __fastcall NewDoc(void);
-	void __fastcall FreeDoc(void);
-	void __fastcall AddPage(void);
+	__fastcall TPdfDoc();
+	__fastcall virtual ~TPdfDoc();
+	void __fastcall NewDoc();
+	void __fastcall FreeDoc();
+	void __fastcall AddPage();
 	void __fastcall AddXObject(System::UnicodeString AName, Pdftypes::TPdfXObject* AXObject);
 	void __fastcall SaveToStream(System::Classes::TStream* AStream);
-	void __fastcall SetVirtualMode(void);
+	void __fastcall SetVirtualMode();
 	TPdfFont* __fastcall GetFont(System::UnicodeString FontName);
 	Pdftypes::TPdfXObject* __fastcall GetXObject(System::UnicodeString AName);
 	Pdftypes::TPdfDictionary* __fastcall CreateAnnotation(TPdfAnnotationSubType AType, const Pdftypes::TPdfRect &ARect);
-	TPdfDestination* __fastcall CreateDestination(void);
+	TPdfDestination* __fastcall CreateDestination();
 	__property bool HasDoc = {read=FHasDoc, nodefault};
 	__property TPdfCanvas* Canvas = {read=GetCanvas};
 	__property TPdfInfo* Info = {read=GetInfo};
@@ -274,8 +274,8 @@ public:
 	__property float FontSize = {read=FFontSize, write=SetFontSize};
 	__property TPdfFont* Font = {read=FFont, write=FFont};
 public:
-	/* TObject.Create */ inline __fastcall TPdfCanvasAttribute(void) : System::TObject() { }
-	/* TObject.Destroy */ inline __fastcall virtual ~TPdfCanvasAttribute(void) { }
+	/* TObject.Create */ inline __fastcall TPdfCanvasAttribute() : System::TObject() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TPdfCanvasAttribute() { }
 	
 };
 
@@ -295,17 +295,17 @@ private:
 	void __fastcall SetPageWidth(int AValue);
 	void __fastcall SetPageHeight(int AValue);
 	void __fastcall WriteString(System::UnicodeString S);
-	TPdfDoc* __fastcall GetDoc(void);
-	Pdftypes::TPdfDictionary* __fastcall GetPage(void);
-	int __fastcall GetPageWidth(void);
-	int __fastcall GetPageHeight(void);
+	TPdfDoc* __fastcall GetDoc();
+	Pdftypes::TPdfDictionary* __fastcall GetPage();
+	int __fastcall GetPageWidth();
+	int __fastcall GetPageHeight();
 	System::UnicodeString __fastcall GetColorStr(TPdfColor Color);
 	
 public:
 	__fastcall TPdfCanvas(TPdfDoc* APdfDoc);
-	__fastcall virtual ~TPdfCanvas(void);
-	void __fastcall GSave(void);
-	void __fastcall GRestore(void);
+	__fastcall virtual ~TPdfCanvas();
+	void __fastcall GSave();
+	void __fastcall GRestore();
 	void __fastcall Concat(float a, float b, float c, float d, float e, float f);
 	void __fastcall SetFlat(System::Byte flatness);
 	void __fastcall SetLineCap(TLineCapStyle linecap);
@@ -319,18 +319,18 @@ public:
 	void __fastcall CurveToV(float x2, float y2, float x3, float y3);
 	void __fastcall CurveToY(float x1, float y1, float x3, float y3);
 	void __fastcall Rectangle(float x, float y, float width, float height);
-	void __fastcall Closepath(void);
-	void __fastcall NewPath(void);
-	void __fastcall Stroke(void);
-	void __fastcall ClosePathStroke(void);
-	void __fastcall Fill(void);
-	void __fastcall Eofill(void);
-	void __fastcall FillStroke(void);
-	void __fastcall ClosepathFillStroke(void);
-	void __fastcall EofillStroke(void);
-	void __fastcall ClosepathEofillStroke(void);
-	void __fastcall Clip(void);
-	void __fastcall Eoclip(void);
+	void __fastcall Closepath();
+	void __fastcall NewPath();
+	void __fastcall Stroke();
+	void __fastcall ClosePathStroke();
+	void __fastcall Fill();
+	void __fastcall Eofill();
+	void __fastcall FillStroke();
+	void __fastcall ClosepathFillStroke();
+	void __fastcall EofillStroke();
+	void __fastcall ClosepathEofillStroke();
+	void __fastcall Clip();
+	void __fastcall Eoclip();
 	void __fastcall SetCharSpace(float charSpace);
 	void __fastcall SetWordSpace(float wordSpace);
 	void __fastcall SetHorizontalScaling(System::Word hScaling);
@@ -338,11 +338,11 @@ public:
 	void __fastcall SetFontAndSize(System::UnicodeString fontname, float size);
 	void __fastcall SetTextRenderingMode(TTextRenderingMode mode);
 	void __fastcall SetTextRise(System::Word rise);
-	void __fastcall BeginText(void);
-	void __fastcall EndText(void);
+	void __fastcall BeginText();
+	void __fastcall EndText();
 	void __fastcall MoveTextPoint(float tx, float ty);
 	void __fastcall SetTextMatrix(System::Word a, System::Word b, System::Word c, System::Word d, System::Word x, System::Word y);
-	void __fastcall MoveToNextLine(void);
+	void __fastcall MoveToNextLine();
 	void __fastcall ShowText(System::UnicodeString s);
 	void __fastcall ShowTextNextLine(System::UnicodeString s);
 	void __fastcall ExecuteXObject(System::UnicodeString xObject);
@@ -376,7 +376,7 @@ class PASCALIMPLEMENTATION TPdfDictionaryWrapper : public System::Classes::TPers
 	
 private:
 	Pdftypes::TPdfDictionary* FData;
-	bool __fastcall GetHasData(void);
+	bool __fastcall GetHasData();
 	
 protected:
 	virtual void __fastcall SetData(Pdftypes::TPdfDictionary* AData);
@@ -385,10 +385,10 @@ public:
 	__property Pdftypes::TPdfDictionary* Data = {read=FData, write=SetData};
 	__property bool HasData = {read=GetHasData, nodefault};
 public:
-	/* TPersistent.Destroy */ inline __fastcall virtual ~TPdfDictionaryWrapper(void) { }
+	/* TPersistent.Destroy */ inline __fastcall virtual ~TPdfDictionaryWrapper() { }
 	
 public:
-	/* TObject.Create */ inline __fastcall TPdfDictionaryWrapper(void) : System::Classes::TPersistent() { }
+	/* TObject.Create */ inline __fastcall TPdfDictionaryWrapper() : System::Classes::TPersistent() { }
 	
 };
 
@@ -400,19 +400,19 @@ class PASCALIMPLEMENTATION TPdfInfo : public TPdfDictionaryWrapper
 	typedef TPdfDictionaryWrapper inherited;
 	
 private:
-	System::UnicodeString __fastcall GetAuthor(void);
+	System::UnicodeString __fastcall GetAuthor();
 	void __fastcall SetAuthor(System::UnicodeString Value);
-	System::TDateTime __fastcall GetCreationDate(void);
+	System::TDateTime __fastcall GetCreationDate();
 	void __fastcall SetCreationDate(System::TDateTime Value);
-	System::UnicodeString __fastcall GetCreator(void);
+	System::UnicodeString __fastcall GetCreator();
 	void __fastcall SetCreator(System::UnicodeString Value);
-	System::UnicodeString __fastcall GetKeywords(void);
+	System::UnicodeString __fastcall GetKeywords();
 	void __fastcall SetKeywords(System::UnicodeString Value);
-	System::UnicodeString __fastcall GetSubject(void);
+	System::UnicodeString __fastcall GetSubject();
 	void __fastcall SetSubject(System::UnicodeString Value);
-	System::UnicodeString __fastcall GetTitle(void);
+	System::UnicodeString __fastcall GetTitle();
 	void __fastcall SetTitle(System::UnicodeString Value);
-	System::TDateTime __fastcall GetModDate(void);
+	System::TDateTime __fastcall GetModDate();
 	void __fastcall SetModDate(System::TDateTime Value);
 	
 public:
@@ -424,10 +424,10 @@ public:
 	__property System::UnicodeString Subject = {read=GetSubject, write=SetSubject};
 	__property System::UnicodeString Title = {read=GetTitle, write=SetTitle};
 public:
-	/* TPersistent.Destroy */ inline __fastcall virtual ~TPdfInfo(void) { }
+	/* TPersistent.Destroy */ inline __fastcall virtual ~TPdfInfo() { }
 	
 public:
-	/* TObject.Create */ inline __fastcall TPdfInfo(void) : TPdfDictionaryWrapper() { }
+	/* TObject.Create */ inline __fastcall TPdfInfo() : TPdfDictionaryWrapper() { }
 	
 };
 
@@ -445,14 +445,14 @@ private:
 	void __fastcall SetNonFullScreenPageMode(TPdfPageMode Value);
 	void __fastcall SetViewerPreference(TPdfViewerPreferences Value);
 	void __fastcall SetPages(Pdftypes::TPdfDictionary* APage);
-	TPdfPageLayout __fastcall GetPageLayout(void);
-	TPdfPageMode __fastcall GetPageMode(void);
-	TPdfPageMode __fastcall GetNonFullScreenPageMode(void);
-	TPdfViewerPreferences __fastcall GetViewerPreference(void);
-	Pdftypes::TPdfDictionary* __fastcall GetPages(void);
+	TPdfPageLayout __fastcall GetPageLayout();
+	TPdfPageMode __fastcall GetPageMode();
+	TPdfPageMode __fastcall GetNonFullScreenPageMode();
+	TPdfViewerPreferences __fastcall GetViewerPreference();
+	Pdftypes::TPdfDictionary* __fastcall GetPages();
 	
 protected:
-	void __fastcall SaveOpenAction(void);
+	void __fastcall SaveOpenAction();
 	
 public:
 	__property TPdfDestination* OpenAction = {read=FOpenAction, write=FOpenAction};
@@ -462,10 +462,10 @@ public:
 	__property TPdfViewerPreferences ViewerPreference = {read=GetViewerPreference, write=SetViewerPreference, nodefault};
 	__property Pdftypes::TPdfDictionary* Pages = {read=GetPages, write=SetPages};
 public:
-	/* TPersistent.Destroy */ inline __fastcall virtual ~TPdfCatalog(void) { }
+	/* TPersistent.Destroy */ inline __fastcall virtual ~TPdfCatalog() { }
 	
 public:
-	/* TObject.Create */ inline __fastcall TPdfCatalog(void) : TPdfDictionaryWrapper() { }
+	/* TObject.Create */ inline __fastcall TPdfCatalog() : TPdfDictionaryWrapper() { }
 	
 };
 
@@ -488,7 +488,7 @@ public:
 	virtual int __fastcall GetCharWidth(System::UnicodeString AText, int APos);
 	__property System::UnicodeString Name = {read=FName};
 public:
-	/* TPersistent.Destroy */ inline __fastcall virtual ~TPdfFont(void) { }
+	/* TPersistent.Destroy */ inline __fastcall virtual ~TPdfFont() { }
 	
 };
 
@@ -509,13 +509,13 @@ private:
 	void __fastcall SetElement(int Index, int Value);
 	void __fastcall SetZoom(float Value);
 	int __fastcall GetElement(int Index);
-	int __fastcall GetPageWidth(void);
-	int __fastcall GetPageHeight(void);
+	int __fastcall GetPageWidth();
+	int __fastcall GetPageHeight();
 	
 public:
 	__fastcall TPdfDestination(TPdfDoc* APdfDoc);
-	__fastcall virtual ~TPdfDestination(void);
-	Pdftypes::TPdfArray* __fastcall GetValue(void);
+	__fastcall virtual ~TPdfDestination();
+	Pdftypes::TPdfArray* __fastcall GetValue();
 	__property TPdfDestinationType DestinationType = {read=FType, write=FType, nodefault};
 	__property TPdfDoc* Doc = {read=FDoc};
 	__property int Left = {read=GetElement, write=SetElement, index=0, nodefault};
@@ -550,11 +550,11 @@ private:
 	
 protected:
 	__fastcall virtual TPdfOutlineEntry(TPdfOutlineEntry* AParent);
-	virtual void __fastcall Save(void);
+	virtual void __fastcall Save();
 	
 public:
-	__fastcall virtual ~TPdfOutlineEntry(void);
-	TPdfOutlineEntry* __fastcall AddChild(void);
+	__fastcall virtual ~TPdfOutlineEntry();
+	TPdfOutlineEntry* __fastcall AddChild();
 	__property TPdfDoc* Doc = {read=FDoc};
 	__property TPdfOutlineEntry* Parent = {read=FParent};
 	__property TPdfOutlineEntry* Next = {read=FNext};
@@ -566,7 +566,7 @@ public:
 	__property bool Opened = {read=FOpened, write=FOpened, nodefault};
 	__property System::TObject* Reference = {read=FReference, write=FReference};
 public:
-	/* TObject.Create */ inline __fastcall TPdfOutlineEntry(void) : TPdfDictionaryWrapper() { }
+	/* TObject.Create */ inline __fastcall TPdfOutlineEntry() : TPdfDictionaryWrapper() { }
 	
 };
 
@@ -581,15 +581,15 @@ protected:
 	__fastcall virtual TPdfOutlineRoot(TPdfDoc* ADoc);
 	
 public:
-	virtual void __fastcall Save(void);
+	virtual void __fastcall Save();
 protected:
 	/* TPdfOutlineEntry.CreateEntry */ inline __fastcall virtual TPdfOutlineRoot(TPdfOutlineEntry* AParent) : TPdfOutlineEntry(AParent) { }
 	
 public:
-	/* TPdfOutlineEntry.Destroy */ inline __fastcall virtual ~TPdfOutlineRoot(void) { }
+	/* TPdfOutlineEntry.Destroy */ inline __fastcall virtual ~TPdfOutlineRoot() { }
 	
 public:
-	/* TObject.Create */ inline __fastcall TPdfOutlineRoot(void) : TPdfOutlineEntry() { }
+	/* TObject.Create */ inline __fastcall TPdfOutlineRoot() : TPdfOutlineEntry() { }
 	
 };
 

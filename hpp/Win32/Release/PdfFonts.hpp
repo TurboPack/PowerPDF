@@ -2,7 +2,7 @@
 // Copyright (c) 1995, 2017 by Embarcadero Technologies, Inc.
 // All rights reserved
 
-// (DO NOT EDIT: machine generated header) 'PdfFonts.pas' rev: 32.00 (Windows)
+// (DO NOT EDIT: machine generated header) 'PdfFonts.pas' rev: 33.00 (Windows)
 
 #ifndef PdffontsHPP
 #define PdffontsHPP
@@ -99,7 +99,7 @@ private:
 	
 public:
 	__fastcall virtual TPdfType1Font(Pdfdoc::TPdfXref* AXref, System::UnicodeString AName);
-	__fastcall virtual ~TPdfType1Font(void);
+	__fastcall virtual ~TPdfType1Font();
 	virtual void __fastcall SetData(Pdftypes::TPdfDictionary* Value);
 	virtual int __fastcall GetCharWidth(System::UnicodeString AText, int APos);
 };
@@ -114,7 +114,7 @@ class PASCALIMPLEMENTATION TPdfFixedWidth : public TPdfType1Font
 public:
 	__fastcall virtual TPdfFixedWidth(Pdfdoc::TPdfXref* AXref, System::UnicodeString AName);
 public:
-	/* TPdfType1Font.Destroy */ inline __fastcall virtual ~TPdfFixedWidth(void) { }
+	/* TPdfType1Font.Destroy */ inline __fastcall virtual ~TPdfFixedWidth() { }
 	
 };
 
@@ -128,7 +128,7 @@ class PASCALIMPLEMENTATION TPdfFixedWidthBold : public TPdfType1Font
 public:
 	__fastcall virtual TPdfFixedWidthBold(Pdfdoc::TPdfXref* AXref, System::UnicodeString AName);
 public:
-	/* TPdfType1Font.Destroy */ inline __fastcall virtual ~TPdfFixedWidthBold(void) { }
+	/* TPdfType1Font.Destroy */ inline __fastcall virtual ~TPdfFixedWidthBold() { }
 	
 };
 
@@ -142,7 +142,7 @@ class PASCALIMPLEMENTATION TPdfFixedWidthItalic : public TPdfType1Font
 public:
 	__fastcall virtual TPdfFixedWidthItalic(Pdfdoc::TPdfXref* AXref, System::UnicodeString AName);
 public:
-	/* TPdfType1Font.Destroy */ inline __fastcall virtual ~TPdfFixedWidthItalic(void) { }
+	/* TPdfType1Font.Destroy */ inline __fastcall virtual ~TPdfFixedWidthItalic() { }
 	
 };
 
@@ -156,7 +156,7 @@ class PASCALIMPLEMENTATION TPdfFixedWidthBoldItalic : public TPdfType1Font
 public:
 	__fastcall virtual TPdfFixedWidthBoldItalic(Pdfdoc::TPdfXref* AXref, System::UnicodeString AName);
 public:
-	/* TPdfType1Font.Destroy */ inline __fastcall virtual ~TPdfFixedWidthBoldItalic(void) { }
+	/* TPdfType1Font.Destroy */ inline __fastcall virtual ~TPdfFixedWidthBoldItalic() { }
 	
 };
 
@@ -170,7 +170,7 @@ class PASCALIMPLEMENTATION TPdfArial : public TPdfType1Font
 public:
 	__fastcall virtual TPdfArial(Pdfdoc::TPdfXref* AXref, System::UnicodeString AName);
 public:
-	/* TPdfType1Font.Destroy */ inline __fastcall virtual ~TPdfArial(void) { }
+	/* TPdfType1Font.Destroy */ inline __fastcall virtual ~TPdfArial() { }
 	
 };
 
@@ -184,7 +184,7 @@ class PASCALIMPLEMENTATION TPdfArialBold : public TPdfType1Font
 public:
 	__fastcall virtual TPdfArialBold(Pdfdoc::TPdfXref* AXref, System::UnicodeString AName);
 public:
-	/* TPdfType1Font.Destroy */ inline __fastcall virtual ~TPdfArialBold(void) { }
+	/* TPdfType1Font.Destroy */ inline __fastcall virtual ~TPdfArialBold() { }
 	
 };
 
@@ -198,7 +198,7 @@ class PASCALIMPLEMENTATION TPdfArialItalic : public TPdfType1Font
 public:
 	__fastcall virtual TPdfArialItalic(Pdfdoc::TPdfXref* AXref, System::UnicodeString AName);
 public:
-	/* TPdfType1Font.Destroy */ inline __fastcall virtual ~TPdfArialItalic(void) { }
+	/* TPdfType1Font.Destroy */ inline __fastcall virtual ~TPdfArialItalic() { }
 	
 };
 
@@ -212,7 +212,7 @@ class PASCALIMPLEMENTATION TPdfArialBoldItalic : public TPdfType1Font
 public:
 	__fastcall virtual TPdfArialBoldItalic(Pdfdoc::TPdfXref* AXref, System::UnicodeString AName);
 public:
-	/* TPdfType1Font.Destroy */ inline __fastcall virtual ~TPdfArialBoldItalic(void) { }
+	/* TPdfType1Font.Destroy */ inline __fastcall virtual ~TPdfArialBoldItalic() { }
 	
 };
 
@@ -226,7 +226,7 @@ class PASCALIMPLEMENTATION TPdfTimesRoman : public TPdfType1Font
 public:
 	__fastcall virtual TPdfTimesRoman(Pdfdoc::TPdfXref* AXref, System::UnicodeString AName);
 public:
-	/* TPdfType1Font.Destroy */ inline __fastcall virtual ~TPdfTimesRoman(void) { }
+	/* TPdfType1Font.Destroy */ inline __fastcall virtual ~TPdfTimesRoman() { }
 	
 };
 
@@ -240,7 +240,7 @@ class PASCALIMPLEMENTATION TPdfTimesBold : public TPdfType1Font
 public:
 	__fastcall virtual TPdfTimesBold(Pdfdoc::TPdfXref* AXref, System::UnicodeString AName);
 public:
-	/* TPdfType1Font.Destroy */ inline __fastcall virtual ~TPdfTimesBold(void) { }
+	/* TPdfType1Font.Destroy */ inline __fastcall virtual ~TPdfTimesBold() { }
 	
 };
 
@@ -254,7 +254,7 @@ class PASCALIMPLEMENTATION TPdfTimesItalic : public TPdfType1Font
 public:
 	__fastcall virtual TPdfTimesItalic(Pdfdoc::TPdfXref* AXref, System::UnicodeString AName);
 public:
-	/* TPdfType1Font.Destroy */ inline __fastcall virtual ~TPdfTimesItalic(void) { }
+	/* TPdfType1Font.Destroy */ inline __fastcall virtual ~TPdfTimesItalic() { }
 	
 };
 
@@ -268,7 +268,7 @@ class PASCALIMPLEMENTATION TPdfTimesBoldItalic : public TPdfType1Font
 public:
 	__fastcall virtual TPdfTimesBoldItalic(Pdfdoc::TPdfXref* AXref, System::UnicodeString AName);
 public:
-	/* TPdfType1Font.Destroy */ inline __fastcall virtual ~TPdfTimesBoldItalic(void) { }
+	/* TPdfType1Font.Destroy */ inline __fastcall virtual ~TPdfTimesBoldItalic() { }
 	
 };
 
@@ -282,7 +282,7 @@ class PASCALIMPLEMENTATION TPdfScript : public TPdfType1Font
 public:
 	__fastcall virtual TPdfScript(Pdfdoc::TPdfXref* AXref, System::UnicodeString AName);
 public:
-	/* TPdfType1Font.Destroy */ inline __fastcall virtual ~TPdfScript(void) { }
+	/* TPdfType1Font.Destroy */ inline __fastcall virtual ~TPdfScript() { }
 	
 };
 

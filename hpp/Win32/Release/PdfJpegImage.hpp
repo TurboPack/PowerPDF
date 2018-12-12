@@ -2,7 +2,7 @@
 // Copyright (c) 1995, 2017 by Embarcadero Technologies, Inc.
 // All rights reserved
 
-// (DO NOT EDIT: machine generated header) 'PdfJpegImage.pas' rev: 32.00 (Windows)
+// (DO NOT EDIT: machine generated header) 'PdfJpegImage.pas' rev: 33.00 (Windows)
 
 #ifndef PdfjpegimageHPP
 #define PdfjpegimageHPP
@@ -37,10 +37,10 @@ class PASCALIMPLEMENTATION TPdfJpegImage : public Pdfimages::TPdfImageCreator
 public:
 	virtual Pdftypes::TPdfImage* __fastcall CreateImage(Vcl::Graphics::TGraphic* AImage);
 public:
-	/* TPersistent.Destroy */ inline __fastcall virtual ~TPdfJpegImage(void) { }
+	/* TPersistent.Destroy */ inline __fastcall virtual ~TPdfJpegImage() { }
 	
 public:
-	/* TObject.Create */ inline __fastcall TPdfJpegImage(void) : Pdfimages::TPdfImageCreator() { }
+	/* TObject.Create */ inline __fastcall TPdfJpegImage() : Pdfimages::TPdfImageCreator() { }
 	
 };
 

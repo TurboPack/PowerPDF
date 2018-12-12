@@ -2,7 +2,7 @@
 // Copyright (c) 1995, 2017 by Embarcadero Technologies, Inc.
 // All rights reserved
 
-// (DO NOT EDIT: machine generated header) 'PReport.pas' rev: 32.00 (Windows)
+// (DO NOT EDIT: machine generated header) 'PReport.pas' rev: 33.00 (Windows)
 
 #ifndef PreportHPP
 #define PreportHPP
@@ -115,18 +115,18 @@ private:
 	void __fastcall SetNonFullScreenPageMode(Pdfdoc::TPdfPageMode Value);
 	void __fastcall SetUseOutlines(bool Value);
 	void __fastcall SetViewerPreference(Pdfdoc::TPdfViewerPreferences Value);
-	TPRDestination* __fastcall GetOpenAction(void);
-	TPROutlineRoot* __fastcall GetOutlineRoot(void);
+	TPRDestination* __fastcall GetOpenAction();
+	TPROutlineRoot* __fastcall GetOutlineRoot();
 	
 public:
 	__fastcall virtual TPReport(System::Classes::TComponent* AOwner);
-	__fastcall virtual ~TPReport(void);
-	void __fastcall BeginDoc(void);
+	__fastcall virtual ~TPReport();
+	void __fastcall BeginDoc();
 	void __fastcall Print(TPRPage* APage);
-	void __fastcall EndDoc(void);
-	void __fastcall Abort(void);
-	TPRDestination* __fastcall CreateDestination(void);
-	Pdfdoc::TPdfDoc* __fastcall GetPdfDoc(void);
+	void __fastcall EndDoc();
+	void __fastcall Abort();
+	TPRDestination* __fastcall CreateDestination();
+	Pdfdoc::TPdfDoc* __fastcall GetPdfDoc();
 	__property int PageNumber = {read=FPage, nodefault};
 	__property TPROutlineRoot* OutlineRoot = {read=GetOutlineRoot};
 	__property TPRDestination* OpenAction = {read=GetOpenAction, write=SetOpenAction};
@@ -157,11 +157,11 @@ class PASCALIMPLEMENTATION TPRCanvas : public System::Classes::TPersistent
 private:
 	Pdfdoc::TPdfCanvas* FCanvas;
 	void __fastcall SetPdfCanvas(Pdfdoc::TPdfCanvas* ACanvas);
-	int __fastcall GetPageHeight(void);
-	int __fastcall GetPageWidth(void);
+	int __fastcall GetPageHeight();
+	int __fastcall GetPageWidth();
 	
 public:
-	__fastcall TPRCanvas(void);
+	__fastcall TPRCanvas();
 	float __fastcall TextWidth(System::UnicodeString Text);
 	void __fastcall SetCharSpace(float charSpace);
 	void __fastcall SetWordSpace(float wordSpace);
@@ -176,7 +176,7 @@ public:
 	__property int PageHeight = {read=GetPageHeight, nodefault};
 	__property int PageWidth = {read=GetPageWidth, nodefault};
 public:
-	/* TPersistent.Destroy */ inline __fastcall virtual ~TPRCanvas(void) { }
+	/* TPersistent.Destroy */ inline __fastcall virtual ~TPRCanvas() { }
 	
 };
 
@@ -200,13 +200,13 @@ private:
 	
 protected:
 	virtual void __fastcall AlignControls(Vcl::Controls::TControl* AControl, System::Types::TRect &ARect);
-	virtual void __fastcall Paint(void);
+	virtual void __fastcall Paint();
 	void __fastcall Print(TPRCanvas* ACanvas);
 	__property Pdfdoc::TPdfDoc* InternalDoc = {read=FDoc};
 	
 public:
 	__fastcall virtual TPRPage(System::Classes::TComponent* AOwner);
-	__fastcall virtual ~TPRPage(void);
+	__fastcall virtual ~TPRPage();
 	
 __published:
 	__property TPRPrintPageEvent OnPrintPage = {read=FPrintPageEvent, write=FPrintPageEvent};
@@ -226,18 +226,18 @@ class PASCALIMPLEMENTATION TPRPanel : public Vcl::Extctrls::TCustomPanel
 	typedef Vcl::Extctrls::TCustomPanel inherited;
 	
 private:
-	TPRPage* __fastcall GetPage(void);
-	System::Types::TRect __fastcall GetAbsoluteRect(void);
+	TPRPage* __fastcall GetPage();
+	System::Types::TRect __fastcall GetAbsoluteRect();
 	
 protected:
-	virtual void __fastcall Paint(void);
+	virtual void __fastcall Paint();
 	virtual void __fastcall Print(TPRCanvas* ACanvas, const System::Types::TRect &ARect);
 	
 public:
 	__property TPRPage* Page = {read=GetPage};
 	__fastcall virtual TPRPanel(System::Classes::TComponent* AOwner);
 public:
-	/* TCustomControl.Destroy */ inline __fastcall virtual ~TPRPanel(void) { }
+	/* TCustomControl.Destroy */ inline __fastcall virtual ~TPRPanel() { }
 	
 public:
 	/* TWinControl.CreateParented */ inline __fastcall TPRPanel(HWND ParentWindow) : Vcl::Extctrls::TCustomPanel(ParentWindow) { }
@@ -253,7 +253,7 @@ public:
 	/* TPRPanel.Create */ inline __fastcall virtual TPRChildPanel(System::Classes::TComponent* AOwner) : TPRPanel(AOwner) { }
 	
 public:
-	/* TCustomControl.Destroy */ inline __fastcall virtual ~TPRChildPanel(void) { }
+	/* TCustomControl.Destroy */ inline __fastcall virtual ~TPRChildPanel() { }
 	
 public:
 	/* TWinControl.CreateParented */ inline __fastcall TPRChildPanel(HWND ParentWindow) : TPRPanel(ParentWindow) { }
@@ -281,7 +281,7 @@ public:
 	/* TPRPanel.Create */ inline __fastcall virtual TPRLayoutPanel(System::Classes::TComponent* AOwner) : TPRPanel(AOwner) { }
 	
 public:
-	/* TCustomControl.Destroy */ inline __fastcall virtual ~TPRLayoutPanel(void) { }
+	/* TCustomControl.Destroy */ inline __fastcall virtual ~TPRLayoutPanel() { }
 	
 public:
 	/* TWinControl.CreateParented */ inline __fastcall TPRLayoutPanel(HWND ParentWindow) : TPRPanel(ParentWindow) { }
@@ -308,13 +308,13 @@ private:
 protected:
 	virtual void __fastcall Print(TPRCanvas* ACanvas, const System::Types::TRect &ARect);
 	virtual void __fastcall AlignControls(Vcl::Controls::TControl* AControl, System::Types::TRect &ARect);
-	virtual void __fastcall Paint(void);
+	virtual void __fastcall Paint();
 	virtual void __fastcall SetParent(Vcl::Controls::TWinControl* AParent);
-	DYNAMIC System::Classes::TComponent* __fastcall GetChildParent(void);
+	DYNAMIC System::Classes::TComponent* __fastcall GetChildParent();
 	
 public:
 	__fastcall virtual TPRGridPanel(System::Classes::TComponent* AOwner);
-	__fastcall virtual ~TPRGridPanel(void);
+	__fastcall virtual ~TPRGridPanel();
 	DYNAMIC void __fastcall GetChildren(System::Classes::TGetChildProc Proc, System::Classes::TComponent* Root);
 	
 __published:
@@ -338,12 +338,12 @@ class PASCALIMPLEMENTATION TPRItem : public Vcl::Controls::TGraphicControl
 	
 private:
 	bool FPrintable;
-	TPRPage* __fastcall GetPage(void);
+	TPRPage* __fastcall GetPage();
 	
 protected:
 	virtual void __fastcall SetParent(Vcl::Controls::TWinControl* AParent);
 	virtual void __fastcall Print(TPRCanvas* ACanvas, const System::Types::TRect &ARect);
-	Pdfdoc::TPdfDoc* __fastcall GetInternalDoc(void);
+	Pdfdoc::TPdfDoc* __fastcall GetInternalDoc();
 	__property TPRPage* Page = {read=GetPage};
 	
 public:
@@ -353,7 +353,7 @@ __published:
 	__property Align = {default=0};
 	__property bool Printable = {read=FPrintable, write=FPrintable, default=1};
 public:
-	/* TGraphicControl.Destroy */ inline __fastcall virtual ~TPRItem(void) { }
+	/* TGraphicControl.Destroy */ inline __fastcall virtual ~TPRItem() { }
 	
 };
 
@@ -373,7 +373,7 @@ private:
 	void __fastcall SetCharSpace(float Value);
 	void __fastcall SetWordSpace(float Value);
 	void __fastcall SetFontColor(System::Uitypes::TColor Value);
-	System::UnicodeString __fastcall GetFontClassName(void);
+	System::UnicodeString __fastcall GetFontClassName();
 	void __fastcall SetFontName(TPRFontName Value);
 	void __fastcall SetFontItalic(bool Value);
 	void __fastcall SetFontBold(bool Value);
@@ -395,7 +395,7 @@ __published:
 	__property float CharSpace = {read=FCharSpace, write=SetCharSpace};
 	__property float WordSpace = {read=FWordSpace, write=SetWordSpace};
 public:
-	/* TGraphicControl.Destroy */ inline __fastcall virtual ~TPRCustomLabel(void) { }
+	/* TGraphicControl.Destroy */ inline __fastcall virtual ~TPRCustomLabel() { }
 	
 };
 
@@ -413,11 +413,11 @@ private:
 	void __fastcall SetCanvasProperties(Pdfdoc::TPdfCanvas* ACanvas);
 	
 protected:
-	virtual void __fastcall Paint(void);
+	virtual void __fastcall Paint();
 	virtual void __fastcall Print(TPRCanvas* ACanvas, const System::Types::TRect &ARect);
 	
 __published:
-	float __fastcall GetTextWidth(void);
+	float __fastcall GetTextWidth();
 	__property Caption = {default=0};
 	__property bool Clipping = {read=FClipping, write=FClipping, default=0};
 	__property System::Classes::TAlignment Alignment = {read=FAlignment, write=SetAlignment, default=0};
@@ -426,7 +426,7 @@ public:
 	/* TPRCustomLabel.Create */ inline __fastcall virtual TPRLabel(System::Classes::TComponent* AOwner) : TPRCustomLabel(AOwner) { }
 	
 public:
-	/* TGraphicControl.Destroy */ inline __fastcall virtual ~TPRLabel(void) { }
+	/* TGraphicControl.Destroy */ inline __fastcall virtual ~TPRLabel() { }
 	
 };
 
@@ -443,16 +443,16 @@ private:
 	void __fastcall SetWordwrap(bool Value);
 	void __fastcall SetLines(System::Classes::TStrings* Value);
 	HIDESBASE void __fastcall SetText(System::UnicodeString Value);
-	HIDESBASE System::UnicodeString __fastcall GetText(void);
-	System::Classes::TStrings* __fastcall GetLines(void);
+	HIDESBASE System::UnicodeString __fastcall GetText();
+	System::Classes::TStrings* __fastcall GetLines();
 	
 protected:
-	virtual void __fastcall Paint(void);
+	virtual void __fastcall Paint();
 	virtual void __fastcall Print(TPRCanvas* ACanvas, const System::Types::TRect &ARect);
 	
 public:
 	__fastcall virtual TPRText(System::Classes::TComponent* AOwner);
-	__fastcall virtual ~TPRText(void);
+	__fastcall virtual ~TPRText();
 	__property System::UnicodeString Text = {read=GetText, write=SetText};
 	
 __published:
@@ -488,7 +488,7 @@ __published:
 	__property Vcl::Graphics::TPenStyle LineStyle = {read=FLineStyle, write=SetLineStyle, nodefault};
 	__property System::Uitypes::TColor FillColor = {read=FFillColor, write=SetFillColor, default=536870911};
 public:
-	/* TGraphicControl.Destroy */ inline __fastcall virtual ~TPRShape(void) { }
+	/* TGraphicControl.Destroy */ inline __fastcall virtual ~TPRShape() { }
 	
 };
 
@@ -498,13 +498,13 @@ class PASCALIMPLEMENTATION TPRRect : public TPRShape
 	typedef TPRShape inherited;
 	
 protected:
-	virtual void __fastcall Paint(void);
+	virtual void __fastcall Paint();
 	virtual void __fastcall Print(TPRCanvas* ACanvas, const System::Types::TRect &ARect);
 public:
 	/* TPRShape.Create */ inline __fastcall virtual TPRRect(System::Classes::TComponent* AOwner) : TPRShape(AOwner) { }
 	
 public:
-	/* TGraphicControl.Destroy */ inline __fastcall virtual ~TPRRect(void) { }
+	/* TGraphicControl.Destroy */ inline __fastcall virtual ~TPRRect() { }
 	
 };
 
@@ -514,13 +514,13 @@ class PASCALIMPLEMENTATION TPREllipse : public TPRShape
 	typedef TPRShape inherited;
 	
 protected:
-	virtual void __fastcall Paint(void);
+	virtual void __fastcall Paint();
 	virtual void __fastcall Print(TPRCanvas* ACanvas, const System::Types::TRect &ARect);
 public:
 	/* TPRShape.Create */ inline __fastcall virtual TPREllipse(System::Classes::TComponent* AOwner) : TPRShape(AOwner) { }
 	
 public:
-	/* TGraphicControl.Destroy */ inline __fastcall virtual ~TPREllipse(void) { }
+	/* TGraphicControl.Destroy */ inline __fastcall virtual ~TPREllipse() { }
 	
 };
 
@@ -537,12 +537,12 @@ protected:
 	bool FSharedImage;
 	bool FStretch;
 	virtual void __fastcall SetPicture(Vcl::Graphics::TPicture* Value);
-	virtual void __fastcall Paint(void);
+	virtual void __fastcall Paint();
 	virtual void __fastcall Print(TPRCanvas* ACanvas, const System::Types::TRect &ARect);
 	
 public:
 	__fastcall virtual TPRImage(System::Classes::TComponent* AOwner);
-	__fastcall virtual ~TPRImage(void);
+	__fastcall virtual ~TPRImage();
 	
 __published:
 	__property Vcl::Graphics::TPicture* Picture = {read=FPicture, write=SetPicture};
@@ -559,11 +559,11 @@ class PASCALIMPLEMENTATION TPRDestination : public System::TObject
 private:
 	Pdfdoc::TPdfDestination* FData;
 	void __fastcall SetType(Pdfdoc::TPdfDestinationType Value);
-	Pdfdoc::TPdfDestinationType __fastcall GetType(void);
+	Pdfdoc::TPdfDestinationType __fastcall GetType();
 	void __fastcall SetElement(int Index, int Value);
 	void __fastcall SetZoom(float Value);
 	int __fastcall GetElement(int Index);
-	float __fastcall GetZoom(void);
+	float __fastcall GetZoom();
 	
 protected:
 	__fastcall TPRDestination(Pdfdoc::TPdfDestination* AData);
@@ -577,7 +577,7 @@ public:
 	__property int Bottom = {read=GetElement, write=SetElement, index=3, nodefault};
 	__property float Zoom = {read=GetZoom, write=SetZoom};
 public:
-	/* TObject.Destroy */ inline __fastcall virtual ~TPRDestination(void) { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TPRDestination() { }
 	
 };
 
@@ -590,20 +590,20 @@ class PASCALIMPLEMENTATION TPROutlineEntry : public System::TObject
 	
 private:
 	Pdfdoc::TPdfOutlineEntry* FData;
-	TPROutlineEntry* __fastcall GetParent(void);
-	TPROutlineEntry* __fastcall GetNext(void);
-	TPROutlineEntry* __fastcall GetPrev(void);
-	TPROutlineEntry* __fastcall GetFirst(void);
-	TPROutlineEntry* __fastcall GetLast(void);
-	TPRDestination* __fastcall GetDest(void);
-	System::UnicodeString __fastcall GetTitle(void);
-	bool __fastcall GetOpened(void);
+	TPROutlineEntry* __fastcall GetParent();
+	TPROutlineEntry* __fastcall GetNext();
+	TPROutlineEntry* __fastcall GetPrev();
+	TPROutlineEntry* __fastcall GetFirst();
+	TPROutlineEntry* __fastcall GetLast();
+	TPRDestination* __fastcall GetDest();
+	System::UnicodeString __fastcall GetTitle();
+	bool __fastcall GetOpened();
 	void __fastcall SetDest(TPRDestination* Value);
 	void __fastcall SetTitle(System::UnicodeString Value);
 	void __fastcall SetOpened(bool Value);
 	
 public:
-	TPROutlineEntry* __fastcall AddChild(void);
+	TPROutlineEntry* __fastcall AddChild();
 	__property TPROutlineEntry* Parent = {read=GetParent};
 	__property TPROutlineEntry* Next = {read=GetNext};
 	__property TPROutlineEntry* Prev = {read=GetPrev};
@@ -613,8 +613,8 @@ public:
 	__property System::UnicodeString Title = {read=GetTitle, write=SetTitle};
 	__property bool Opened = {read=GetOpened, write=SetOpened, nodefault};
 public:
-	/* TObject.Create */ inline __fastcall TPROutlineEntry(void) : System::TObject() { }
-	/* TObject.Destroy */ inline __fastcall virtual ~TPROutlineEntry(void) { }
+	/* TObject.Create */ inline __fastcall TPROutlineEntry() : System::TObject() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TPROutlineEntry() { }
 	
 };
 
@@ -628,8 +628,8 @@ class PASCALIMPLEMENTATION TPROutlineRoot : public TPROutlineEntry
 protected:
 	__fastcall TPROutlineRoot(Pdfdoc::TPdfDoc* ADoc);
 public:
-	/* TObject.Create */ inline __fastcall TPROutlineRoot(void) : TPROutlineEntry() { }
-	/* TObject.Destroy */ inline __fastcall virtual ~TPROutlineRoot(void) { }
+	/* TObject.Create */ inline __fastcall TPROutlineRoot() : TPROutlineEntry() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TPROutlineRoot() { }
 	
 };
 

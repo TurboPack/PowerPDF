@@ -2,7 +2,7 @@
 // Copyright (c) 1995, 2017 by Embarcadero Technologies, Inc.
 // All rights reserved
 
-// (DO NOT EDIT: machine generated header) 'PRAnnotation.pas' rev: 32.00 (Windows)
+// (DO NOT EDIT: machine generated header) 'PRAnnotation.pas' rev: 33.00 (Windows)
 
 #ifndef PrannotationHPP
 #define PrannotationHPP
@@ -43,17 +43,17 @@ private:
 	bool FOpened;
 	void __fastcall SetLines(System::Classes::TStrings* Value);
 	HIDESBASE void __fastcall SetText(System::UnicodeString Value);
-	HIDESBASE System::UnicodeString __fastcall GetText(void);
-	System::Classes::TStrings* __fastcall GetLines(void);
+	HIDESBASE System::UnicodeString __fastcall GetText();
+	System::Classes::TStrings* __fastcall GetLines();
 	
 protected:
 	MESSAGE void __fastcall CMTextChanged(Winapi::Messages::TMessage &Message);
-	virtual void __fastcall Paint(void);
+	virtual void __fastcall Paint();
 	virtual void __fastcall Print(Preport::TPRCanvas* ACanvas, const System::Types::TRect &ARect);
 	
 public:
 	__fastcall virtual TPRAnnotation(System::Classes::TComponent* AOwner);
-	__fastcall virtual ~TPRAnnotation(void);
+	__fastcall virtual ~TPRAnnotation();
 	__property System::UnicodeString Text = {read=GetText, write=SetText};
 	
 __published:
