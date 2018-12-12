@@ -1,7 +1,7 @@
 package PowerPDFDR;
 
 {$R *.res}
-{$R '..\..\PowerPdf.dcr'}
+{$R '..\..\Source\PowerPdf.dcr'}
 {$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
 {$ALIGN 8}
 {$ASSERTIONS OFF}
@@ -37,13 +37,13 @@ requires
   vclimg;
 
 contains
-  PdfJpegImage in '..\..\PdfJpegImage.pas',
-  PdfTypes in '..\..\PdfTypes.pas',
-  PRAnnotation in '..\..\PRAnnotation.pas',
-  PReport in '..\..\PReport.pas',
-  PRJpegImage in '..\..\PRJpegImage.pas',
-  PdfDoc in '..\..\PdfDoc.pas',
-  PdfFonts in '..\..\PdfFonts.pas',
-  PdfImages in '..\..\PdfImages.pas';
+  PdfJpegImage in '..\..\Source\PdfJpegImage.pas',
+  PdfTypes in '..\..\Source\PdfTypes.pas',
+  PRAnnotation in '..\..\Source\PRAnnotation.pas',
+  PReport in '..\..\Source\PReport.pas',
+  PRJpegImage in '..\..\Source\PRJpegImage.pas',
+  PdfDoc in '..\..\Source\PdfDoc.pas',
+  PdfFonts in '..\..\Source\PdfFonts.pas',
+  PdfImages in '..\..\Source\PdfImages.pas';
 
 end.

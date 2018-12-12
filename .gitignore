@@ -1,4 +1,8 @@
 
-*.local
 *.stat
+__history
+*.local
+*.identcache
 *.dcu
+*.dsk
+*.~*
