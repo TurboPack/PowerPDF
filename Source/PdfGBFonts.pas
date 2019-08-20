@@ -91,6 +91,8 @@ begin
     mbSingleByte: result := 0;
     mbLeadByte: result := 0;
     mbTrailByte: result := -1;
+  else
+    Result := 0;
   end;
 end;
 
