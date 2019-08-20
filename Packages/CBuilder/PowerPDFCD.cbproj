@@ -100,7 +100,6 @@
         <ILINK_Description>TurboPack PowerPDF Designtime Package</ILINK_Description>
         <ILINK_LibraryPath>..\..\Source\;$(ILINK_LibraryPath)</ILINK_LibraryPath>
         <ILINK_GenerateImportLibrary>true</ILINK_GenerateImportLibrary>
-        <DCC_HppOutput>..\..\hpp\$(Platform)\$(Config)</DCC_HppOutput>
         <IncludePath>..\..\Source\;$(IncludePath)</IncludePath>
         <DCC_CBuilderOutput>All</DCC_CBuilderOutput>
         <DynamicRTL>true</DynamicRTL>

@@ -101,7 +101,6 @@
         <RuntimeOnlyPackage>true</RuntimeOnlyPackage>
         <_TCHARMapping>char</_TCHARMapping>
         <VerInfo_Locale>1031</VerInfo_Locale>
-        <DCC_HppOutput>..\..\hpp\$(Platform)\$(Config)</DCC_HppOutput>
         <Multithreaded>true</Multithreaded>
         <DCC_OutputNeverBuildDcps>true</DCC_OutputNeverBuildDcps>
         <IncludePath>..\..\Source\;..\..\;$(IncludePath)</IncludePath>
