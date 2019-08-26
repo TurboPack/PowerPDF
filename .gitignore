@@ -10,3 +10,4 @@ __history
 Release
 Debug
 *.hpp
+*.tvsconfig
