@@ -53,6 +53,9 @@ function CreatePdfImage(AImage: TGraphic; ImageClassName: string): TPdfImage;
 var
   PdfImageCreator: TPdfImageCreator;
 begin
+{$IF COMPILERVERSION < 32}
+  Result := nil;
+{$ENDIF}
   PdfImageCreator := TPdfImageCreator(FindClass(ImageClassName).Create);
   try
     if PdfImageCreator = nil then
