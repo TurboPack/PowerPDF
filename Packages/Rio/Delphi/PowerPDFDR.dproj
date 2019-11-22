@@ -9,7 +9,7 @@
         <MainSource>PowerPDFDR.dpk</MainSource>
         <Platform Condition="'$(Platform)'==''">Win32</Platform>
         <ProjectGuid>{B8A453C6-960E-4A55-86EE-143421EB6772}</ProjectGuid>
-        <ProjectVersion>18.7</ProjectVersion>
+        <ProjectVersion>18.8</ProjectVersion>
         <TargetedPlatforms>3</TargetedPlatforms>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
@@ -253,6 +253,7 @@
             </Deployment>
             <Platforms>
                 <Platform value="Android">False</Platform>
+                <Platform value="Android64">False</Platform>
                 <Platform value="Linux64">False</Platform>
                 <Platform value="OSX32">False</Platform>
                 <Platform value="OSX64">False</Platform>
