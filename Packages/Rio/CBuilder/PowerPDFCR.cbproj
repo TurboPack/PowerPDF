@@ -242,9 +242,6 @@
         <DelphiCompile Include="..\..\..\Source\PdfTypes.pas">
             <BuildOrder>8</BuildOrder>
         </DelphiCompile>
-        <DelphiCompile Include="..\..\..\Source\PowerPdf.pas">
-            <BuildOrder>15</BuildOrder>
-        </DelphiCompile>
         <DelphiCompile Include="..\..\..\Source\PRAnnotation.pas">
             <BuildOrder>9</BuildOrder>
         </DelphiCompile>
