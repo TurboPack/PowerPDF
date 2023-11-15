@@ -25,8 +25,15 @@ unit PRAnnotation;
 interface
 
 uses
-  Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
-  PReport, PdfDoc, PdfFonts, PdfTypes;
+  Winapi.Windows,
+  Winapi.Messages,
+  System.SysUtils,
+  System.Classes,
+  Vcl.Graphics,
+  Vcl.Controls,
+  PReport,
+  PdfDoc,
+  PdfTypes;
 
 type
   TPRAnnotation = class(TPRItem)

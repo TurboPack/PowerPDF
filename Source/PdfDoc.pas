@@ -47,7 +47,9 @@ interface
 {$DEFINE NOZLIB}
 
 uses
-  SysUtils, Classes, PdfTypes, Windows;
+  System.SysUtils,
+  System.Classes,
+  PdfTypes;
 
 const
   POWER_PDF_VERSION_TEXT = 'PowerPdf version 0.9';

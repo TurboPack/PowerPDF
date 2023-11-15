@@ -25,8 +25,13 @@ unit PRJpegImage;
 interface
 
 uses
-  Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
-  PReport, PdfDoc, PdfTypes, PdfImages, PdfJpegImage, JPEG;
+  Winapi.Windows,
+  System.SysUtils,
+  Vcl.Graphics,
+  Vcl.Imaging.jpeg,
+  PReport,
+  PdfDoc,
+  PdfImages;
 
 type
   TPRJpegImage = class(TPRImage)

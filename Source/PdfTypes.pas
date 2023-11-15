@@ -36,10 +36,8 @@ interface
 {$DEFINE NOZLIB}
 
 uses
-  SysUtils, Classes
-{$IFNDEF LINUX}
-  , Windows
-{$ENDIF}
+  System.SysUtils,
+  System.Classes
 {$IFNDEF NOZLIB}
   ,Zlib;
 {$ELSE}
@@ -299,7 +297,7 @@ type
 implementation
 
 uses
-  Types;
+  System.Types;
 
 {TPdfObject}
 

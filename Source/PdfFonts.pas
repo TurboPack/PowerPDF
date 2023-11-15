@@ -26,7 +26,10 @@ unit PdfFonts;
 interface
 
 uses
-  SysUtils, Classes, Generics.Collections, PdfDoc, PdfTypes;
+  System.Classes,
+  System.Generics.Collections,
+  PdfDoc,
+  PdfTypes;
 
 const
   TYPE1_FONT_STR_TABLE: array[0..2] of TPDF_STR_TBL =(

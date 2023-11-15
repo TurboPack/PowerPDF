@@ -25,7 +25,11 @@ unit PdfJpegImage;
 interface
 
 uses
-  SysUtils, Classes, Graphics, PdfTypes, PdfDoc, PdfImages, JPEG;
+  System.Classes,
+  Vcl.Graphics,
+  PdfTypes,
+  PdfImages,
+  Vcl.Imaging.jpeg;
 
 type
   { TPdfJpegImage }
