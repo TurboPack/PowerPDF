@@ -42,8 +42,17 @@ interface
 //{$DEFINE USE_GBFONTS}
 
 uses
-  Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
-  ExtCtrls, PdfDoc, PdfFonts, PdfTypes, PdfImages
+  Winapi.Windows,
+  Winapi.Messages,
+  System.SysUtils,
+  System.Classes,
+  Vcl.Graphics,
+  Vcl.Controls,
+  Vcl.Forms,
+  Vcl.ExtCtrls,
+  PdfDoc,
+  PdfTypes,
+  PdfImages
   {$IFDEF USE_JPFONTS}
   , PdfJPFonts
   {$ENDIF}
@@ -626,7 +635,8 @@ const
 implementation
 
 uses
-  Types, UITypes;
+  System.Types,
+  System.UITypes;
 
 { common routines }
 

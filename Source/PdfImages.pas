@@ -28,7 +28,11 @@ unit PdfImages;
 interface
 
 uses
-  SysUtils, Windows, Graphics, Classes, PdfTypes, PdfDoc;
+  Winapi.Windows,
+  System.SysUtils,
+  System.Classes,
+  Vcl.Graphics,
+  PdfTypes;
 
 type
   TPdfImageCreator = class(TPersistent)

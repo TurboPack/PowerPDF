@@ -26,7 +26,7 @@ unit PdfJpCMap;
 interface
 
 uses
-  SysUtils;
+  System.SysUtils;
 
 type
   {*

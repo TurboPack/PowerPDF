@@ -26,7 +26,10 @@ unit PdfJpFonts;
 interface
 
 uses
-  SysUtils, Classes, PdfDoc, PdfTypes;
+  System.SysUtils,
+  System.Classes,
+  PdfDoc,
+  PdfTypes;
 
 const
   CIDTYPE2_JP_FONT_STR_TABLE: array[0..2] of TPDF_STR_TBL =(

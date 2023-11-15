@@ -24,7 +24,10 @@ unit PowerPdf;
 interface
 
 uses
-  Classes, PReport, PRJpegImage, PRAnnotation;
+  System.Classes,
+  PReport,
+  PRJpegImage,
+  PRAnnotation;
 
 procedure Register;
 

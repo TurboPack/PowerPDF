@@ -27,7 +27,11 @@ unit PdfGBFonts;
 interface
 
 uses
-  SysUtils, Classes, PdfDoc, PdfTypes, PdfJpFonts;
+  System.SysUtils,
+  System.Classes,
+  PdfDoc,
+  PdfTypes,
+  PdfJpFonts;
 
 const
   CIDTYPE2_GB_FONT_STR_TABLE: array[0..2] of TPDF_STR_TBL =(
