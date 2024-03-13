@@ -49,47 +49,47 @@ begin
                                   TPRAnnotation
                                  ]);
 
-  RegisterClassAlias(TPdfFixedWidth, 'FixedWidth');
-  RegisterClassAlias(TPdfFixedWidthBold, 'FixedWidth-Bold');
-  RegisterClassAlias(TPdfFixedWidthBoldItalic, 'FixedWidth-BoldItalic');
-  RegisterClassAlias(TPdfFixedWidthItalic, 'FixedWidth-Italic');
-  RegisterClassAlias(TPdfArial, 'Arial');
-  RegisterClassAlias(TPdfArialBold, 'Arial-Bold');
-  RegisterClassAlias(TPdfArialBoldItalic, 'Arial-BoldItalic');
-  RegisterClassAlias(TPdfArialItalic, 'Arial-Italic');
-  RegisterClassAlias(TPdfTimesRoman, 'Times-Roman');
-  RegisterClassAlias(TPdfTimesBold, 'Times-Bold');
-  RegisterClassAlias(TPdfTimesItalic, 'Times-Italic');
-  RegisterClassAlias(TPdfTimesBoldItalic, 'Times-BoldItalic');
+//  RegisterClassAlias(TPdfFixedWidth, 'FixedWidth');
+//  RegisterClassAlias(TPdfFixedWidthBold, 'FixedWidth-Bold');
+//  RegisterClassAlias(TPdfFixedWidthBoldItalic, 'FixedWidth-BoldItalic');
+//  RegisterClassAlias(TPdfFixedWidthItalic, 'FixedWidth-Italic');
+//  RegisterClassAlias(TPdfArial, 'Arial');
+//  RegisterClassAlias(TPdfArialBold, 'Arial-Bold');
+//  RegisterClassAlias(TPdfArialBoldItalic, 'Arial-BoldItalic');
+//  RegisterClassAlias(TPdfArialItalic, 'Arial-Italic');
+//  RegisterClassAlias(TPdfTimesRoman, 'Times-Roman');
+//  RegisterClassAlias(TPdfTimesBold, 'Times-Bold');
+//  RegisterClassAlias(TPdfTimesItalic, 'Times-Italic');
+//  RegisterClassAlias(TPdfTimesBoldItalic, 'Times-BoldItalic');
 //  RegisterClassAlias(TPdfScript, 'Script');
 //  RegisterClassAlias(TPdfSymbol, 'Symbol');
 
-  RegisterClassAlias(TPdfBitmapImage, 'Pdf-Bitmap');
-
-  RegisterClassAlias(TPdfJpegImage, 'Pdf-Jpeg');
+//  RegisterClassAlias(TPdfBitmapImage, 'Pdf-Bitmap');
+//
+//  RegisterClassAlias(TPdfJpegImage, 'Pdf-Jpeg');
 
 end;
 
 procedure Unregister;
 begin
-  UnRegisterClass(TPdfFixedWidth);
-  UnRegisterClass(TPdfFixedWidthBold);
-  UnRegisterClass(TPdfFixedWidthBoldItalic);
-  UnRegisterClass(TPdfFixedWidthBold);
-  UnRegisterClass(TPdfArial);
-  UnRegisterClass(TPdfArialBold);
-  UnRegisterClass(TPdfArialBoldItalic);
-  UnRegisterClass(TPdfArialBold);
-  UnRegisterClass(TPdfTimesRoman);
-  UnRegisterClass(TPdfTimesBold);
-  UnRegisterClass(TPdfTimesItalic);
-  UnRegisterClass(TPdfTimesBoldItalic);
+//  UnRegisterClass(TPdfFixedWidth);
+//  UnRegisterClass(TPdfFixedWidthBold);
+//  UnRegisterClass(TPdfFixedWidthBoldItalic);
+//  UnRegisterClass(TPdfFixedWidthBold);
+//  UnRegisterClass(TPdfArial);
+//  UnRegisterClass(TPdfArialBold);
+//  UnRegisterClass(TPdfArialBoldItalic);
+//  UnRegisterClass(TPdfArialBold);
+//  UnRegisterClass(TPdfTimesRoman);
+//  UnRegisterClass(TPdfTimesBold);
+//  UnRegisterClass(TPdfTimesItalic);
+//  UnRegisterClass(TPdfTimesBoldItalic);
 //  UnRegisterClass(TPdfScript);
 //  UnRegisterClass(TPdfSymbol);
 
-  UnRegisterClass(TPdfBitmapImage);
-
-  UnRegisterClass(TPdfJpegImage);
+//  UnRegisterClass(TPdfBitmapImage);
+//
+//  UnRegisterClass(TPdfJpegImage);
 
 end;
 
